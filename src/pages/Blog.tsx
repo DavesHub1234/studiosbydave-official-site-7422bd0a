@@ -6,6 +6,15 @@ import { ArrowRight } from "lucide-react";
 
 const blogArticles = [
   {
+    id: 4,
+    slug: "local-seo-essentials-2026",
+    title: "Local SEO Essentials for Shelby Businesses in 2026: Don't Get Left Behind in AI Search",
+    subtitle: "Why Local SEO Is More Important Than Ever – And How to Get It Right",
+    date: "February 2026",
+    volume: "Vol. 1, No. 4",
+    excerpt: "Even a beautifully designed, mistake-free website can get buried in search results if local SEO isn't dialed in. With AI Overviews, zero-click searches, and voice assistants dominating, local online visibility has shifted dramatically.",
+  },
+  {
     id: 3,
     slug: "website-mistakes-costing-customers",
     title: "5 Common Website Mistakes Costing Local Businesses Customers",
