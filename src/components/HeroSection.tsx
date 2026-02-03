@@ -72,9 +72,11 @@ const HeroSection = () => {
                 }} />)}
                 </div>
                 <h1 className="font-bold text-white leading-tight lg:text-5xl text-5xl">
-                  We Don't Just Build You a Website.{" "}
-                  We Build Something <span className="text-trophy-gold font-bold">GREAT</span> Together!
+                  We Don't Just Build Your Website or App.
                 </h1>
+                <p className="text-white/95 leading-tight lg:text-2xl text-xl font-medium mt-3">
+                  We build the online engine that gets your business found, trusted, and hired by local customers.
+                </p>
               </div>
               
               <p className="text-xl text-white/90 max-w-2xl leading-relaxed">
