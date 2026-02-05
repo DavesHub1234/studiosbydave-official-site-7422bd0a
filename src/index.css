@@ -142,6 +142,36 @@
     @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
   }
   
+  .chrome-text {
+    background: linear-gradient(
+      135deg,
+      hsl(210 10% 85%) 0%,
+      hsl(210 15% 95%) 15%,
+      hsl(210 8% 70%) 30%,
+      hsl(210 20% 98%) 45%,
+      hsl(210 10% 80%) 60%,
+      hsl(210 15% 92%) 75%,
+      hsl(210 8% 75%) 100%
+    );
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 
+      0 1px 2px hsl(210 20% 95% / 0.3),
+      0 -1px 1px hsl(210 10% 40% / 0.2);
+    animation: chrome-shimmer 4s ease-in-out infinite;
+  }
+  
+  @keyframes chrome-shimmer {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
   .hero-pattern {
     background-image: radial-gradient(hsl(262 57% 66% / 0.1) 1px, transparent 1px);
     background-size: 20px 20px;
