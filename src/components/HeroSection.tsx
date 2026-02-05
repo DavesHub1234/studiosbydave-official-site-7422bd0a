@@ -40,7 +40,7 @@ const HeroSection = () => {
           </div>
         </div>
         {/* Mascot pointing to phone number */}
-        <img src={mascotPointing} alt="Studios by Dave mascot pointing to phone number" loading="lazy" decoding="async" width="96" height="96" className="absolute -bottom-20 -left-16 w-24 h-24 drop-shadow-lg border-4 border-solid object-cover opacity-65" />
+        <img src={mascotPointing} alt="Studios by Dave mascot pointing to phone number" loading="lazy" decoding="async" width="96" height="96" className="absolute -bottom-20 -left-16 w-24 h-24 drop-shadow-lg border-4 opacity-60 border-solid object-cover" />
       </div>
       
       {/* Content */}
@@ -72,9 +72,7 @@ const HeroSection = () => {
                 }} />)}
                 </div>
                 <h1 className="font-bold text-white leading-tight lg:text-5xl text-5xl">
-                <span className="chrome-text" data-text="We Don't Just Build Your Website or App.">
                   We Don't Just Build Your Website or App.
-                </span>
                 </h1>
                 <p className="text-white/95 leading-tight lg:text-2xl text-xl font-medium mt-3">
                   We build the online engine that gets your business found, trusted, and hired by local customers.
