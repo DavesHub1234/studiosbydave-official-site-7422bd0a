@@ -74,7 +74,7 @@ const HeroSection = () => {
                 <h1 className="font-bold chrome-text leading-tight lg:text-5xl drop-shadow-lg text-6xl">
                   We Don't Just Build Your Website or App.
                 </h1>
-                <p className="text-white/95 leading-tight lg:text-2xl text-xl font-medium mt-3">
+                <p className="leading-tight lg:text-2xl text-xl font-medium mt-3 text-[#dfe2f6]">
                   We build the online engine that gets your business found, trusted, and hired by local customers.
                 </p>
               </div>
