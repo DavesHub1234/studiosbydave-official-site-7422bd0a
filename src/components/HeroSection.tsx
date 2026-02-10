@@ -74,13 +74,13 @@ const HeroSection = () => {
                 <h1 className="font-bold chrome-text leading-tight lg:text-5xl drop-shadow-lg text-7xl">
                   We Don't Just Build Your Website or App.
                 </h1>
-                <p className="leading-tight lg:text-2xl text-xl font-medium mt-3 text-[#dfe2f6]">
+                <p className="leading-tight lg:text-2xl font-medium mt-3 text-[#dfe2f6] text-2xl">
                   We build the online engine that gets your business found, trusted, and hired by local customers.
                 </p>
               </div>
               
               <p className="text-xl text-white/90 max-w-2xl leading-relaxed">
-                <span className="font-bold block mb-2 text-muted-foreground">We build opportunity!</span>
+                <span className="font-bold block mb-2 text-muted-foreground">​  </span>
                 Specialized web development and digital marketing for YOUR local business. At Studios by Dave we want to see YOU succeed!
               </p>
             </div>
