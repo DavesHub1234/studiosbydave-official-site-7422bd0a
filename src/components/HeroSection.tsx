@@ -71,7 +71,7 @@ const HeroSection = () => {
                   boxShadow: i % 4 === 0 ? '0 0 5px hsl(var(--trophy-gold))' : 'none'
                 }} />)}
                 </div>
-                <h1 className="font-bold chrome-text leading-tight lg:text-5xl drop-shadow-lg text-6xl">
+                <h1 className="font-bold chrome-text leading-tight lg:text-5xl drop-shadow-lg text-7xl">
                   We Don't Just Build Your Website or App.
                 </h1>
                 <p className="leading-tight lg:text-2xl text-xl font-medium mt-3 text-[#dfe2f6]">
