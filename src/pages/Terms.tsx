@@ -17,7 +17,7 @@ const Terms = () => {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="flex justify-center mb-8">
               <img 
-                src="/lovable-uploads/53e3faf8-91ca-4a91-841b-36561dcb91f1-optimized.jpg" 
+                src="/new-logo.png" 
                 alt="Studios by Dave Logo" 
                 className="h-20 w-auto"
                 width="96"

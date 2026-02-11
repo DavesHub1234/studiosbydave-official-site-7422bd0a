@@ -1,4 +1,4 @@
-import studiosByDaveLogo from "@/assets/studios-by-dave-logo.webp";
+import studiosByDaveLogo from "@/assets/new-logo.png";
 import leadFerretMascot from "@/assets/lead-ferret-mascot.jpeg";
 
 const PromotionMarquee = () => {
