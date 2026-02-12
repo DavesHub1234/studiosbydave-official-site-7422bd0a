@@ -54,7 +54,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center space-x-3">
-              <img src="/new-logo.png" alt="Studios by Dave logo - professional web design and digital marketing for contractors" className="h-24 w-auto" width="96" height="96" loading="lazy" decoding="async" />
+              <video src="/studios-logo-video.mp4" autoPlay loop muted playsInline className="h-24 w-auto" width="96" height="96" />
               <span className="text-2xl font-bold text-primary">Studios by Dave</span>
             </Link>
           </div>
