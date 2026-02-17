@@ -87,7 +87,7 @@ const SimpleSEO = ({
 
     // Structured Data
     if (structuredData) {
-      let scriptTag = document.querySelector('script[type="application/ld+json"]');
+      let scriptTag = document.querySelector('script[type="application/ld+json"]') as HTMLScriptElement | null;
       if (!scriptTag) {
         scriptTag = document.createElement('script');
         scriptTag.type = 'application/ld+json';
