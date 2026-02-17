@@ -1,13 +1,13 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import SEO from "@/components/SEO";
+import SimpleSEO from "@/components/SimpleSEO";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 
 const BlogArticle1 = () => {
   return (
     <div className="min-h-screen bg-stone-200">
-      <SEO
+      <SimpleSEO
         title="Why Choose Studios by Dave Over the Local Competition? | Studios by Dave Blog"
         description="A Local Partner for Professional Web Design, Branding, and SEO in Shelby, NC. Learn what makes Studios by Dave different from other local options."
         keywords="Shelby NC web design, local web designer, branding Shelby NC, SEO Cleveland County, Studios by Dave"

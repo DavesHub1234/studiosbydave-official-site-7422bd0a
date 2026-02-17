@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, ArrowRight, Search, FileText, Link2, BarChart3, MapPin, Image } from "lucide-react";
 import { Link } from "react-router-dom";
-import SEO from "@/components/SEO";
+import SimpleSEO from "@/components/SimpleSEO";
 import { breadcrumbSchema } from "@/data/structuredData";
 
 const SEOPage = () => {
@@ -32,7 +32,7 @@ const SEOPage = () => {
 
   return (
     <div className="min-h-screen">
-      <SEO
+      <SimpleSEO
         title="SEO Services for Contractors - Complete Search Engine Optimization"
         description="Professional SEO services for contractors including on-page SEO, local SEO, technical SEO, and content optimization. Rank higher in search results and get more customers online."
         keywords="SEO services contractors, contractor SEO, on-page SEO, local SEO, technical SEO, search engine optimization, image SEO, video SEO, off-page SEO"

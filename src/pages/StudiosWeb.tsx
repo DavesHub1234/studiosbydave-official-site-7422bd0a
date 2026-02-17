@@ -1,6 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import SEO from "@/components/SEO";
+import SimpleSEO from "@/components/SimpleSEO";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -39,7 +39,7 @@ const StudiosWeb = () => {
     features: ["Lead Generation", "Customer Support", "Workflow Automation", "Data Analysis"]
   }];
   return <div className="min-h-screen">
-      <SEO title="StudiosWeb - Complete Digital Solutions for Your Business" description="Comprehensive web design, SEO, branding, and automation services for roofing contractors, landscaping companies, and solar panel installers. Transform your digital presence." keywords="web design services, SEO optimization, business branding, AI automation, digital marketing, contractor websites" />
+      <SimpleSEO title="StudiosWeb - Complete Digital Solutions for Your Business" description="Comprehensive web design, SEO, branding, and automation services for roofing contractors, landscaping companies, and solar panel installers. Transform your digital presence." keywords="web design services, SEO optimization, business branding, AI automation, digital marketing, contractor websites" />
       <Navigation />
       
       <main>

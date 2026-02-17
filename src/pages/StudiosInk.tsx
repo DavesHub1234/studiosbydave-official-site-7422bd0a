@@ -1,12 +1,12 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import SEO from "@/components/SEO";
+import SimpleSEO from "@/components/SimpleSEO";
 
 const StudiosInk = () => {
 
   return (
     <div className="min-h-screen">
-      <SEO
+      <SimpleSEO
         title="StudiosInk - Literary Works & Creative Storytelling"
         description="Discover captivating books, explore the author's creative journey, and dive into the world of literary storytelling. From published works to the writing process behind each story."
         keywords="books, author, literary works, creative writing, storytelling, published books, book reviews, writing process"

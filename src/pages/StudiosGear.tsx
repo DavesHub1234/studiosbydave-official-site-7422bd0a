@@ -1,12 +1,12 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import SEO from "@/components/SEO";
+import SimpleSEO from "@/components/SimpleSEO";
 
 const StudiosGear = () => {
 
   return (
     <div className="min-h-screen">
-      <SEO
+      <SimpleSEO
         title="Studios-Gear - Custom Apps & Projects"
         description="Explore custom applications, innovative projects, and digital tools. A showcase of custom-built solutions and creative technology projects."
         keywords="custom apps, projects, digital tools, software development, web applications, custom solutions, technology projects"

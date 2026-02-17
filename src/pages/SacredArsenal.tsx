@@ -1,6 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import SEO from "@/components/SEO";
+import SimpleSEO from "@/components/SimpleSEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -9,7 +9,7 @@ import { Star, Book, Shield, Eye } from "lucide-react";
 const SacredArsenal = () => {
   return (
     <div className="min-h-screen">
-      <SEO
+      <SimpleSEO
         title="Sacred Arsenal - The 5G Defense Superscript by David P Richardson"
         description="Discover Sacred Arsenal, an extraordinary book exploring the mystical and technological realms. A compelling narrative that bridges ancient wisdom with modern understanding."
         keywords="Sacred Arsenal, David P Richardson, 5G Defense, spiritual technology, mystical book, defense superscript"

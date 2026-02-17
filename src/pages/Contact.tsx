@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 
-import SEO from "@/components/SEO";
+import SimpleSEO from "@/components/SimpleSEO";
 import { breadcrumbSchema } from "@/data/structuredData";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -139,7 +139,7 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen" itemScope itemType="https://schema.org/WebPage">
-      <SEO
+      <SimpleSEO
         title="Contact Studios by Dave - Get Your Free Quote Today"
         description="Contact Studios by Dave for professional web design, SEO, AI automations, and branding services. Free consultations available. Call (704) 473-8188 or email us today."
         keywords="contact studiosbydave, free web design quote, contractor web design consultation, SEO services quote, AI automation consultation, Shelby NC web design"

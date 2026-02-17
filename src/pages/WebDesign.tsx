@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, ArrowRight, Globe, Smartphone, Zap, Search } from "lucide-react";
 import { Link } from "react-router-dom";
-import SEO from "@/components/SEO";
+import SimpleSEO from "@/components/SimpleSEO";
 import { breadcrumbSchema } from "@/data/structuredData";
 
 const WebDesign = () => {
@@ -37,7 +37,7 @@ const WebDesign = () => {
 
   return (
     <div className="min-h-screen">
-      <SEO
+      <SimpleSEO
         title="Professional Web Design for Contractors - Mobile-Responsive Websites"
         description="Custom web design for roofing contractors, landscaping companies, and solar installers. Mobile-first responsive websites that convert visitors into customers. Get your free quote today."
         keywords="contractor web design, roofing contractor websites, landscaping web design, solar installer websites, mobile responsive design, lead generation websites, professional web development"

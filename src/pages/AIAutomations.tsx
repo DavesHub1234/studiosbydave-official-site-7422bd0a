@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, ArrowRight, Bot, MessageSquare, Calendar, Phone, Target, Zap, ArrowDown } from "lucide-react";
 import { Link } from "react-router-dom";
-import SEO from "@/components/SEO";
+import SimpleSEO from "@/components/SimpleSEO";
 import { breadcrumbSchema } from "@/data/structuredData";
 
 const AIAutomations = () => {
@@ -33,7 +33,7 @@ const AIAutomations = () => {
 
   return (
     <div className="min-h-screen">
-      <SEO
+      <SimpleSEO
         title="AI Automations for Contractors - Chatbots & Business Automation"
         description="Transform your contractor business with AI automations. 24/7 chatbots, automated scheduling, lead qualification, and process automation. Save 20+ hours per week with intelligent business solutions."
         keywords="AI automation contractors, chatbots for contractors, automated scheduling, lead qualification AI, business process automation, contractor chatbots, AI solutions business"

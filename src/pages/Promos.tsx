@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import InternalLinksFooter from "@/components/InternalLinks";
-import SEO from "@/components/SEO";
+import SimpleSEO from "@/components/SimpleSEO";
 import { Link } from "react-router-dom";
 import { Gift, Users, Clock, CheckCircle, Star } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const Promos = () => {
   return (
     <div className="min-h-screen bg-background">
-      <SEO
+      <SimpleSEO
         title="Current Promotions | Studios by Dave - Free Logo Design & Referral Bonus"
         description="Take advantage of our current promotions: FREE Logo Design with any Web Pack purchase and Unlimited $100 Referral Bonuses. Limited time offers for contractors and local businesses."
         keywords="free logo design, referral bonus, web design promotion, contractor website deals, studios by dave promotions"

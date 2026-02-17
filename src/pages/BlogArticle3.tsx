@@ -1,13 +1,13 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import SEO from "@/components/SEO";
+import SimpleSEO from "@/components/SimpleSEO";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 
 const BlogArticle3 = () => {
   return (
     <div className="min-h-screen bg-stone-200">
-      <SEO
+      <SimpleSEO
         title="5 Common Website Mistakes Costing Local Businesses Customers | Studios by Dave Blog"
         description="Discover the top website mistakes hurting local businesses and learn how to fix them. From slow loading speeds to poor mobile design, get expert tips from Studios by Dave."
         keywords="website mistakes, local business website, mobile responsive, local SEO, website speed, Shelby NC web design"

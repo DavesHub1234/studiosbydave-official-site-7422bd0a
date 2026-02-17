@@ -1,13 +1,13 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import SEO from "@/components/SEO";
+import SimpleSEO from "@/components/SimpleSEO";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 
 const BlogArticle2 = () => {
   return (
     <div className="min-h-screen bg-stone-200">
-      <SEO
+      <SimpleSEO
         title="Does Your Business Really Need a Website in 2026? | Studios by Dave Blog"
         description="Discover why most businesses still need a website in 2026, what role it plays in trust-building and discovery, and what happens if you skip it."
         keywords="do I need a website 2026, business website importance, website vs social media, web presence, Studios by Dave"

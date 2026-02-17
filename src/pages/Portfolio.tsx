@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import InternalLinksFooter from "@/components/InternalLinks";
-import SEO from "@/components/SEO";
+import SimpleSEO from "@/components/SimpleSEO";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
@@ -243,7 +243,7 @@ const Portfolio = () => {
 
   return (
     <div className="min-h-screen">
-      <SEO
+      <SimpleSEO
         title="Portfolio - Studios by Dave | Web Design & Development Projects"
         description="Explore our portfolio of professional websites and web applications. See real examples of our work for local businesses including contractors, musicians, and innovative apps."
         keywords="web design portfolio, website examples, web development projects, contractor websites, business websites, web applications"

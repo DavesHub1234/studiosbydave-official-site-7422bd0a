@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, ArrowRight, Users, Award, Target, Lightbulb } from "lucide-react";
 import { Link } from "react-router-dom";
-import SEO from "@/components/SEO";
+import SimpleSEO from "@/components/SimpleSEO";
 import { breadcrumbSchema, faqSchema } from "@/data/structuredData";
 import webDesignBackdrop from "@/assets/web-design-backdrop.png";
 import brandingBackdrop from "@/assets/branding-backdrop.jpeg";
@@ -19,7 +19,7 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
-      <SEO
+      <SimpleSEO
         title="About Studios by Dave - Web Design & Digital Marketing Experts"
         description="Learn about Studios by Dave, your trusted partner for web design, SEO, AI automations, and branding. Specialized in helping roofing contractors, landscaping companies, and solar installers grow their business online."
         keywords="about studiosbydave, web design company, digital marketing experts, contractor specialists, north carolina web design, local business marketing"

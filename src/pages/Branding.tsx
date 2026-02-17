@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, ArrowRight, Palette, Users, Target, Award } from "lucide-react";
 import { Link } from "react-router-dom";
-import SEO from "@/components/SEO";
+import SimpleSEO from "@/components/SimpleSEO";
 import { breadcrumbSchema } from "@/data/structuredData";
 import brandKitShowcase from "@/assets/brand-kit-showcase.png";
 
@@ -35,7 +35,7 @@ const Branding = () => {
 
   return (
     <div className="min-h-screen">
-      <SEO
+      <SimpleSEO
         title="Professional Logo Design & Branding for Contractors - Brand Identity"
         description="Professional logo design and branding services for contractors and local businesses. Create memorable brand identity that builds trust with customers. Custom logos and complete branding packages."
         keywords="logo design contractors, branding for contractors, professional logo design, brand identity design, business logo design, contractor branding, marketing materials design"

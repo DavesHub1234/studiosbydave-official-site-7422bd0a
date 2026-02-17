@@ -6,7 +6,7 @@ import PromotionMarquee from "@/components/PromotionMarquee";
 import PromotionalSections from "@/components/PromotionalSections";
 import Footer from "@/components/Footer";
 import InternalLinksFooter from "@/components/InternalLinks";
-import SEO from "@/components/SEO";
+import SimpleSEO from "@/components/SimpleSEO";
 import { organizationSchema, servicesSchema, localBusinessSchema } from "@/data/structuredData";
 
 const Index = () => {
@@ -14,7 +14,7 @@ const Index = () => {
   
   return (
     <div className="min-h-screen">
-      <SEO
+      <SimpleSEO
         title="Studios by Dave - Web Development & Digital Marketing for Local Businesses"
         description="Professional web design, SEO optimization, AI automations, and branding for roofing contractors, landscaping companies, and solar panel installers. We don't just build websites. We build opportunity."
         keywords="web design contractors, roofing contractor websites, landscaping web design, solar panel installer marketing, SEO for contractors, AI automation business, North Carolina web design"

@@ -1,13 +1,13 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import SEO from "@/components/SEO";
+import SimpleSEO from "@/components/SimpleSEO";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 
 const BlogArticle4 = () => {
   return (
     <div className="min-h-screen bg-stone-200">
-      <SEO
+      <SimpleSEO
         title="Local SEO Essentials for Shelby Businesses in 2026 | Studios by Dave Blog"
         description="Learn why local SEO is more important than ever in 2026 with AI search, zero-click results, and voice assistants. Essential tips for Shelby NC businesses."
         keywords="local SEO Shelby NC, Google Business Profile optimization, AI search 2026, zero-click search, voice search SEO, Cleveland County SEO"

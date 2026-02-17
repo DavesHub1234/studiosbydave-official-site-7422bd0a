@@ -1,11 +1,11 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import SEO from "@/components/SEO";
+import SimpleSEO from "@/components/SimpleSEO";
 
 const Privacy = () => {
   return (
     <>
-      <SEO
+      <SimpleSEO
         title="Privacy Policy - Studios by Dave"
         description="Privacy Policy for Studios by Dave. Learn how we collect, use, and protect your personal information when you use our web design and digital marketing services."
         noindex={true}

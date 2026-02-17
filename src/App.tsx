@@ -3,7 +3,6 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import StudiosWeb from "./pages/StudiosWeb";
 import StudiosInk from "./pages/StudiosInk";
@@ -36,7 +35,6 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <HelmetProvider>
       <TooltipProvider>
         <Toaster />
         <Sonner />
@@ -49,7 +47,7 @@ const App = () => (
           <Route path="/studiosweb/branding" element={<Branding />} />
           <Route path="/studiosweb/ai-automations" element={<AIAutomations />} />
           <Route path="/studiosweb/google-optimization" element={<GoogleOptimization />} />
-          <Route path="/studiosweb/seo" element={<SEOPage />} />
+          <Route path="/studiosweb/seo" element={<SimpleSEOPage />} />
           <Route path="/studiosweb/promos" element={<Promos />} />
           <Route path="/studiosweb/portfolio" element={<Portfolio />} />
           <Route path="/studiosink" element={<StudiosInk />} />
@@ -73,7 +71,6 @@ const App = () => (
           <ElfsightPopup />
         </BrowserRouter>
       </TooltipProvider>
-    </HelmetProvider>
   </QueryClientProvider>
 );
 

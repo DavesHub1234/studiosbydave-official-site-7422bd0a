@@ -12,7 +12,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { CalendarIcon, Clock } from "lucide-react";
 import { format } from "date-fns";
 import { cn } from "@/lib/utils";
-import SEO from "@/components/SEO";
+import SimpleSEO from "@/components/SimpleSEO";
 import { toast } from "sonner";
 import {
   Form,
@@ -89,7 +89,7 @@ const Booking = () => {
 
   return (
     <div className="min-h-screen">
-      <SEO
+      <SimpleSEO
         title="Book Your Free Consultation - Studios by Dave"
         description="Schedule a free consultation with Studios by Dave. Choose your preferred date and time for a personalized discussion about your web design and digital marketing needs."
         keywords="free consultation, book appointment, web design consultation, digital marketing consultation, schedule meeting"

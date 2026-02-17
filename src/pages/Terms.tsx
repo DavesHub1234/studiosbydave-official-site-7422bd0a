@@ -1,11 +1,11 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import SEO from "@/components/SEO";
+import SimpleSEO from "@/components/SimpleSEO";
 
 const Terms = () => {
   return (
     <>
-      <SEO
+      <SimpleSEO
         title="Terms of Service - Studios by Dave"
         description="Terms of Service for Studios by Dave. Review our terms and conditions for web design, SEO, AI automation, and digital marketing services."
         noindex={true}

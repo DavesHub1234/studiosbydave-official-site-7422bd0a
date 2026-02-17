@@ -1,6 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import SEO from "@/components/SEO";
+import SimpleSEO from "@/components/SimpleSEO";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
@@ -46,7 +46,7 @@ const blogArticles = [
 const Blog = () => {
   return (
     <div className="min-h-screen bg-[#f5f5f0]">
-      <SEO
+      <SimpleSEO
         title="Blog | Studios by Dave"
         description="Expert insights, tips, and industry news from Studios by Dave. Web design, branding, SEO, and digital marketing content for contractors and local businesses in Shelby, NC."
         keywords="contractor blog, web design tips, SEO insights, digital marketing news, branding advice, Shelby NC"
