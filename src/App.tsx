@@ -47,7 +47,7 @@ const App = () => (
           <Route path="/studiosweb/branding" element={<Branding />} />
           <Route path="/studiosweb/ai-automations" element={<AIAutomations />} />
           <Route path="/studiosweb/google-optimization" element={<GoogleOptimization />} />
-          <Route path="/studiosweb/seo" element={<SimpleSEOPage />} />
+          <Route path="/studiosweb/seo" element={<SEOPage />} />
           <Route path="/studiosweb/promos" element={<Promos />} />
           <Route path="/studiosweb/portfolio" element={<Portfolio />} />
           <Route path="/studiosink" element={<StudiosInk />} />
