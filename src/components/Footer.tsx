@@ -48,7 +48,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
-              <img src="/studios-logo.png" alt="Studios by Dave Logo" className="h-24 w-auto" width="96" height="96" loading="lazy" decoding="async" />
+              <video src="/studios-logo-video.mp4" autoPlay loop muted playsInline className="h-24 w-auto" width="96" height="96" />
             </div>
             <p className="text-white/80 leading-relaxed">
               We don't just build you a website. We build something GREAT together!
