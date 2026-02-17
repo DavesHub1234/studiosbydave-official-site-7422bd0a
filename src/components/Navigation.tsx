@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
+import studiosBrainLogo from "@/assets/studios-brain-logo.png";
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [studiosWebOpen, setStudiosWebOpen] = useState(false);
@@ -54,8 +55,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center space-x-3">
-              <video src="/studios-logo-video.mp4" autoPlay loop muted playsInline className="h-24 w-auto" width="96" height="96" />
-              <span className="text-2xl font-bold text-primary">Studios by Dave</span>
+              <img src={studiosBrainLogo} alt="Studios by Dave Logo" className="h-24 w-auto" width="96" height="96" />
             </Link>
           </div>
 
