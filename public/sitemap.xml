@@ -1,16 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://www.studiosbydave.com/</loc>
-  <lastmod>2026-02-03T07:56:18+00:00</lastmod>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.studiosbydave.com/</loc>
+  </url>
+  <url>
+    <loc>https://www.studiosbydave.com/studiosweb/web-design</loc>
+  </url>
+  <url>
+    <loc>https://www.studiosbydave.com/studiosweb/branding</loc>
+  </url>
+  <url>
+    <loc>https://www.studiosbydave.com/studiosweb/seo</loc>
+  </url>
+  <url>
+    <loc>https://www.studiosbydave.com/studiosweb/google-optimization</loc>
+  </url>
+  <url>
+    <loc>https://www.studiosbydave.com/studiosweb/ai-automations</loc>
+  </url>
+  <url>
+    <loc>https://www.studiosbydave.com/studiosweb/promos</loc>
+  </url>
+  <url>
+    <loc>https://www.studiosbydave.com/studiosweb/portfolio</loc>
+  </url>
+  <url>
+    <loc>https://www.studiosbydave.com/studiosink</loc>
+  </url>
+  <url>
+    <loc>https://www.studiosbydave.com/studiosgear</loc>
+  </url>
+  <url>
+    <loc>https://www.studiosbydave.com/blog</loc>
+  </url>
+  <url>
+    <loc>https://www.studiosbydave.com/about</loc>
+  </url>
+  <url>
+    <loc>https://www.studiosbydave.com/contact</loc>
+  </url>
 </urlset>
