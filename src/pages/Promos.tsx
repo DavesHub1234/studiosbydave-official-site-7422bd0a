@@ -18,16 +18,16 @@ const Promos = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-br from-primary/10 via-background to-accent/10">
+        <section className="relative py-20" style={{ background: 'linear-gradient(135deg, hsl(218 49% 15%) 0%, hsl(259 84% 20%) 50%, hsl(218 49% 18%) 100%)' }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2 rounded-full text-sm font-medium mb-6 border border-white/20">
               <Star className="h-4 w-4" />
               Limited Time Offers
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-              Current <span className="text-primary">Promotions</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+              Current <span className="text-accent">Promotions</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-white/80 max-w-3xl mx-auto">
               Take advantage of our exclusive offers designed to help your business grow. 
               Quality services with exceptional value.
             </p>
@@ -155,9 +155,9 @@ const Promos = () => {
                   </div>
                   <div>
                     <h2 className="text-2xl md:text-3xl font-bold text-white">
-                      $200 First Referral + $100 Unlimited
+                      Unlimited $100 Referral Bonus
                     </h2>
-                    <p className="text-white/90">Double Bonus on Your First Referral!</p>
+                    <p className="text-white/90">Earn Cash for Every Referral—No Limits!</p>
                   </div>
                 </div>
               </div>
@@ -166,18 +166,13 @@ const Promos = () => {
                   <div>
                     <h3 className="text-xl font-semibold text-foreground mb-4">How It Works</h3>
                     <p className="text-muted-foreground mb-6">
-                      Earn <strong className="text-foreground">$200 for your first successful referral</strong>—double the standard bonus! 
-                      After that, continue earning $100 for every additional referral with absolutely no limits on how many 
-                      referrals you can make.
+                      Earn <strong className="text-foreground">$100 for every successful referral</strong> you send our way. 
+                      There are absolutely no limits on how many referrals you can make—keep referring and keep earning!
                     </p>
                     <div className="space-y-3">
                       <div className="flex items-start gap-3">
                         <CheckCircle className="h-5 w-5 text-accent mt-0.5" />
-                        <span className="text-foreground"><strong>$200</strong> for your first referral</span>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <CheckCircle className="h-5 w-5 text-accent mt-0.5" />
-                        <span className="text-foreground"><strong>$100</strong> for every referral after that</span>
+                        <span className="text-foreground"><strong>$100</strong> for every qualifying referral</span>
                       </div>
                       <div className="flex items-start gap-3">
                         <CheckCircle className="h-5 w-5 text-accent mt-0.5" />
@@ -185,7 +180,11 @@ const Promos = () => {
                       </div>
                       <div className="flex items-start gap-3">
                         <CheckCircle className="h-5 w-5 text-accent mt-0.5" />
-                        <span className="text-foreground">Referral bonus paid upon client purchase</span>
+                        <span className="text-foreground">Paid via <strong>Visa gift card</strong> upon successful referral</span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <CheckCircle className="h-5 w-5 text-accent mt-0.5" />
+                        <span className="text-foreground">Referred client must purchase Standard Web Package ($998+)</span>
                       </div>
                     </div>
                   </div>
@@ -217,10 +216,10 @@ const Promos = () => {
 
                 {/* Bonus Structure Emphasis */}
                 <div className="mt-8 p-6 bg-accent/10 rounded-lg border border-accent/20 text-center">
-                  <h4 className="text-2xl font-bold text-accent mb-2">$200 First + Unlimited $100 After</h4>
+                  <h4 className="text-2xl font-bold text-accent mb-2">Unlimited $100 Referral Bonuses</h4>
                   <p className="text-muted-foreground">
-                    Start strong with a <strong>$200 bonus</strong> on your first referral, then keep earning <strong>$100</strong> for every 
-                    additional qualifying referral. There is no ceiling on your referral earnings—your network is your earning potential.
+                    Earn <strong>$100</strong> for every qualifying referral—paid via Visa gift card. Referred clients must purchase a 
+                    Standard Web Package ($998 or higher). There is no ceiling on your referral earnings—your network is your earning potential.
                   </p>
                 </div>
               </CardContent>
@@ -254,10 +253,10 @@ const Promos = () => {
               <p>
                 <strong className="text-foreground">Referral Bonus Program:</strong> A qualifying referral is defined as a new 
                 client who (a) has not previously engaged Studios by Dave for services, (b) explicitly identifies the referring 
-                party at the time of initial consultation, and (c) completes a purchase of any qualifying service. Referral 
-                bonuses are paid to the referring party and are subject to applicable tax reporting requirements. Studios by 
-                Dave reserves the right to verify the legitimacy of all referral claims and may withhold payment pending 
-                verification.
+                party at the time of initial consultation, and (c) completes a purchase of a Standard Web Package ($998 or higher). 
+                Referral bonuses of $100 per qualifying referral are paid via Visa gift card to the referring party and are subject 
+                to applicable tax reporting requirements. Studios by Dave reserves the right to verify the legitimacy of all 
+                referral claims and may withhold payment pending verification.
               </p>
               
               <p>
