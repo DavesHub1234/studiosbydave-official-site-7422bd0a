@@ -102,7 +102,7 @@ export const StartProjectSection = () => {
   );
 };
 
-// Section 2: $200 First Referral + $100 Unlimited
+// Section 2: $100 Unlimited Referral Bonus
 export const ReferralBonusSection = () => {
   return (
     <section 
@@ -119,48 +119,28 @@ export const ReferralBonusSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium mb-6 border border-white/20">
             <Users className="h-4 w-4" />
-            Upgraded Referral Program
+            Referral Program
           </div>
           
-          {/* Two-Tier Bonus Display */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-6">
-            {/* First Referral */}
-            <div className="text-center">
-              <span 
-                className="text-5xl md:text-6xl lg:text-7xl font-bold bg-clip-text text-transparent"
-                style={{ 
-                  backgroundImage: 'linear-gradient(135deg, hsl(45 100% 75%) 0%, hsl(38 100% 65%) 25%, hsl(45 100% 85%) 50%, hsl(35 100% 55%) 75%, hsl(45 100% 70%) 100%)',
-                  WebkitBackgroundClip: 'text',
-                  textShadow: '0 0 40px hsl(45 100% 70% / 0.6)'
-                }}
-              >
-                $200
-              </span>
-              <p className="text-white font-semibold text-lg mt-1">First Referral Bonus</p>
-            </div>
-            
-            {/* Plus Sign */}
-            <span className="text-4xl md:text-5xl text-white/60 font-light">+</span>
-            
-            {/* Unlimited Referrals */}
-            <div className="text-center">
-              <span 
-                className="text-5xl md:text-6xl lg:text-7xl font-bold bg-clip-text text-transparent"
-                style={{ 
-                  backgroundImage: 'linear-gradient(135deg, hsl(45 100% 75%) 0%, hsl(38 100% 65%) 25%, hsl(45 100% 85%) 50%, hsl(35 100% 55%) 75%, hsl(45 100% 70%) 100%)',
-                  WebkitBackgroundClip: 'text',
-                  textShadow: '0 0 40px hsl(45 100% 70% / 0.6)'
-                }}
-              >
-                $100
-              </span>
-              <p className="text-white font-semibold text-lg mt-1">Unlimited After That</p>
-            </div>
+          {/* Bonus Display */}
+          <div className="mb-6">
+            <span 
+              className="text-5xl md:text-6xl lg:text-7xl font-bold bg-clip-text text-transparent"
+              style={{ 
+                backgroundImage: 'linear-gradient(135deg, hsl(45 100% 75%) 0%, hsl(38 100% 65%) 25%, hsl(45 100% 85%) 50%, hsl(35 100% 55%) 75%, hsl(45 100% 70%) 100%)',
+                WebkitBackgroundClip: 'text',
+                textShadow: '0 0 40px hsl(45 100% 70% / 0.6)'
+              }}
+            >
+              $100
+            </span>
+            <p className="text-white font-semibold text-lg mt-1">Per Referral — Unlimited</p>
           </div>
           
           {/* Supporting Text */}
           <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-8">
-            Earn <strong>double the bonus</strong> on your first referral! After that, keep earning $100 for every successful referral—with absolutely no limits.
+            Earn <strong>$100 for every successful referral</strong>—paid via Visa gift card. No limits, no caps. 
+            Referred clients must purchase a Standard Web Package ($998+).
           </p>
           
           {/* CTA Button */}
@@ -177,8 +157,8 @@ export const ReferralBonusSection = () => {
           {/* Fine Print */}
           <div className="mt-10 p-4 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 max-w-2xl mx-auto">
             <p className="text-xs text-white/70 leading-relaxed">
-              <strong className="text-white/90">Referral Program Terms:</strong> Receive $200 for your first qualifying referral and $100 for each subsequent referral. 
-              A qualifying referral is a new client who completes a purchase of any qualifying service. 
+              <strong className="text-white/90">Referral Program Terms:</strong> Receive $100 for each qualifying referral, paid via Visa gift card. 
+              A qualifying referral is a new client who completes a purchase of a Standard Web Package ($998 or higher). 
               Referral bonuses are typically paid within 1-14 business days of purchase confirmation. 
               See full terms on our Promos page.
             </p>
