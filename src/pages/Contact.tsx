@@ -21,40 +21,40 @@ import {
   FormField,
   FormItem,
   FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
+  FormMessage } from
+"@/components/ui/form";
 
 const contactFormSchema = z.object({
-  firstName: z.string()
-    .trim()
-    .min(1, "First name is required")
-    .max(100, "First name must be less than 100 characters")
-    .regex(/^[a-zA-Z\s'-]+$/, "First name can only contain letters, spaces, hyphens, and apostrophes"),
-  lastName: z.string()
-    .trim()
-    .min(1, "Last name is required")
-    .max(100, "Last name must be less than 100 characters")
-    .regex(/^[a-zA-Z\s'-]+$/, "Last name can only contain letters, spaces, hyphens, and apostrophes"),
-  email: z.string()
-    .trim()
-    .min(1, "Email is required")
-    .email("Please enter a valid email address")
-    .max(255, "Email must be less than 255 characters"),
-  phone: z.string()
-    .trim()
-    .min(1, "Phone number is required")
-    .regex(/^[\d\s()+-]+$/, "Please enter a valid phone number")
-    .min(10, "Phone number must be at least 10 characters")
-    .max(20, "Phone number must be less than 20 characters"),
-  business: z.string()
-    .trim()
-    .max(100, "Business type must be less than 100 characters")
-    .optional(),
-  message: z.string()
-    .trim()
-    .min(1, "Message is required")
-    .max(2000, "Message must be less than 2000 characters"),
-  honeypot: z.string().optional(),
+  firstName: z.string().
+  trim().
+  min(1, "First name is required").
+  max(100, "First name must be less than 100 characters").
+  regex(/^[a-zA-Z\s'-]+$/, "First name can only contain letters, spaces, hyphens, and apostrophes"),
+  lastName: z.string().
+  trim().
+  min(1, "Last name is required").
+  max(100, "Last name must be less than 100 characters").
+  regex(/^[a-zA-Z\s'-]+$/, "Last name can only contain letters, spaces, hyphens, and apostrophes"),
+  email: z.string().
+  trim().
+  min(1, "Email is required").
+  email("Please enter a valid email address").
+  max(255, "Email must be less than 255 characters"),
+  phone: z.string().
+  trim().
+  min(1, "Phone number is required").
+  regex(/^[\d\s()+-]+$/, "Please enter a valid phone number").
+  min(10, "Phone number must be at least 10 characters").
+  max(20, "Phone number must be less than 20 characters"),
+  business: z.string().
+  trim().
+  max(100, "Business type must be less than 100 characters").
+  optional(),
+  message: z.string().
+  trim().
+  min(1, "Message is required").
+  max(2000, "Message must be less than 2000 characters"),
+  honeypot: z.string().optional()
 });
 
 type ContactFormValues = z.infer<typeof contactFormSchema>;
@@ -72,14 +72,14 @@ const Contact = () => {
       phone: "",
       business: "",
       message: "",
-      honeypot: "",
-    },
+      honeypot: ""
+    }
   });
 
   const breadcrumbs = breadcrumbSchema([
-    { name: "Home", url: "https://studiosbydave.com" },
-    { name: "Contact", url: "https://studiosbydave.com/contact" }
-  ]);
+  { name: "Home", url: "https://studiosbydave.com" },
+  { name: "Contact", url: "https://studiosbydave.com/contact" }]
+  );
 
   const contactSchema = {
     "@context": "https://schema.org",
@@ -103,26 +103,26 @@ const Contact = () => {
 
   const onSubmit = async (data: ContactFormValues) => {
     setIsSubmitting(true);
-    
+
     try {
       const { data: result, error } = await supabase.functions.invoke('send-contact-email', {
         body: data
       });
 
       if (error) {
-        const errorMessage = error.message?.includes("Too many requests") || error.message?.includes("429")
-          ? "You've submitted too many requests. Please try again in an hour."
-          : "Failed to send message. Please try again or contact us directly at dx1creations25@gmail.com";
-        
+        const errorMessage = error.message?.includes("Too many requests") || error.message?.includes("429") ?
+        "You've submitted too many requests. Please try again in an hour." :
+        "Failed to send message. Please try again or contact us directly at dx1creations25@gmail.com";
+
         throw new Error(errorMessage);
       }
 
       toast({
         title: "Message Sent!",
         description: "We'll get back to you within 24 hours.",
-        duration: 5000,
+        duration: 5000
       });
-      
+
       form.reset();
     } catch (error: any) {
       console.error("Error sending message");
@@ -130,7 +130,7 @@ const Contact = () => {
         title: "Error",
         description: error.message || "Failed to send message. Please try again or contact us directly at dx1creations25@gmail.com",
         variant: "destructive",
-        duration: 7000,
+        duration: 7000
       });
     } finally {
       setIsSubmitting(false);
@@ -143,8 +143,8 @@ const Contact = () => {
         title="Contact Studios by Dave - Get Your Free Quote Today"
         description="Contact Studios by Dave for professional web design, SEO, AI automations, and branding services. Free consultations available. Call (704) 473-8188 or email us today."
         keywords="contact studiosbydave, free web design quote, contractor web design consultation, SEO services quote, AI automation consultation, Shelby NC web design"
-        structuredData={[breadcrumbs, contactSchema]}
-      />
+        structuredData={[breadcrumbs, contactSchema]} />
+
       <Navigation />
       
       {/* Hero Section */}
@@ -200,7 +200,7 @@ const Contact = () => {
                       <Mail size={32} className="text-accent" />
                     </div>
                     <p className="text-white/80 text-lg font-medium mb-2">Email Us</p>
-                    <a href="mailto:dx1creations25@gmail.com" className="text-xl lg:text-2xl font-bold text-amber-200 hover:text-amber-100 transition-colors break-all block">
+                    <a href="mailto:dx1creations25@gmail.com" className="lg:text-2xl font-bold text-amber-200 hover:text-amber-100 transition-colors break-all block text-2xl">
                       dx1creations25@gmail.com
                     </a>
                     <p className="text-white/60 text-sm mt-3">We reply within 24 hours</p>
@@ -253,8 +253,8 @@ const Contact = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>);
+
 };
 
 export default Contact;
