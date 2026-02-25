@@ -34,7 +34,7 @@ const HeroSection = () => {
           </div>
           <div className="text-center">
             <p className="text-white/80 font-medium mb-1 text-base">                                    Call Us    --    TEXT US!          </p>
-            <a href="tel:+17044738188" className="font-bold transition-colors duration-300 text-amber-200 text-2xl">
+            <a href="tel:+17044738188" className="font-bold transition-colors duration-300 text-amber-200 text-3xl">
               (704) 473-8188
             </a>
           </div>
