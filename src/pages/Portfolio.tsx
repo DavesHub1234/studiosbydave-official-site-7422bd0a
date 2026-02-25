@@ -18,7 +18,7 @@ import moleDetectiveImg from "@/assets/portfolio/mole-detective.png";
 import melodyLockImg from "@/assets/portfolio/melody-lock.png";
 import rifeWaveImg from "@/assets/portfolio/rife-wave.png";
 import waveSpyImg from "@/assets/portfolio/wave-spy.png";
-import leadFerretImg from "@/assets/portfolio/lead-ferret.png";
+import leadParrotImg from "@/assets/portfolio/lead-parrot.png";
 
 interface PortfolioProject {
   title: string;
@@ -37,7 +37,7 @@ const webProjects: PortfolioProject[] = [
   {
     title: "Lead-Parrot",
     description: "AI-powered lead generation platform delivering verified, targeted leads in seconds with intelligent outreach templates.",
-    images: [leadFerretImg],
+    images: [leadParrotImg],
     category: "website",
   },
   {
