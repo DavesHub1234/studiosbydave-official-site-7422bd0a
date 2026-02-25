@@ -41,6 +41,11 @@ const RATE_LIMIT_WINDOW = 3600000; // 1 hour in ms
 const MAX_SUBMISSIONS = 5; // per IP per hour
 const submissionLog = new Map<string, number[]>();
 
+// Sanitize strings for use in email headers (strip newlines to prevent header injection)
+function sanitizeHeader(str: string): string {
+  return str.replace(/[\r\n]/g, '').trim();
+}
+
 // HTML escape function to prevent XSS
 function escapeHtml(unsafe: string): string {
   return unsafe
@@ -169,7 +174,7 @@ const handler = async (req: Request): Promise<Response> => {
     const notificationEmail = await resend.emails.send({
       from: "Studios by Dave Contact Form <onboarding@resend.dev>",
       to: ["dx1creations25@gmail.com", "david.richardson@studiosbydave.com"],
-      subject: `New Contact Form Submission from ${escapeHtml(firstName)} ${escapeHtml(lastName)}`,
+      subject: `New Contact Form Submission from ${sanitizeHeader(firstName)} ${sanitizeHeader(lastName)}`,
       html: `
         <h2>New Contact Form Submission</h2>
         <p><strong>Name:</strong> ${escapeHtml(firstName)} ${escapeHtml(lastName)}</p>
@@ -185,7 +190,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Send confirmation email to customer (with XSS protection)
     const confirmationEmail = await resend.emails.send({
       from: "Studios by Dave <onboarding@resend.dev>",
-      to: [email],
+      to: [sanitizeHeader(email)],
       subject: "We received your message!",
       html: `
         <h1>Thank you for contacting Studios by Dave, ${escapeHtml(firstName)}!</h1>
