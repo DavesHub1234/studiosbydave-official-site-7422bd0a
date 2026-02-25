@@ -71,10 +71,10 @@ const HeroSection = () => {
                   boxShadow: i % 4 === 0 ? '0 0 5px hsl(var(--trophy-gold))' : 'none'
                 }} />)}
                 </div>
-                <h1 className="font-bold chrome-text leading-tight lg:text-5xl drop-shadow-lg text-7xl">
+                <h1 className="font-bold chrome-text leading-tight text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl drop-shadow-lg">
                   We Don't Just Build Your <span className="cobalt-glow-text text-sidebar-ring">Website</span> or <span className="cobalt-glow-text">App</span>.
                 </h1>
-                <p className="leading-tight lg:text-2xl font-medium mt-3 text-[#dfe2f6] text-2xl">
+                <p className="leading-tight text-lg sm:text-xl md:text-2xl lg:text-2xl font-medium mt-3 text-[#dfe2f6]">
                   We build the online engine that gets your business found, trusted, and hired by local customers.
                 </p>
               </div>
