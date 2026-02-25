@@ -35,7 +35,7 @@ const webProjects: PortfolioProject[] = [
     category: "website",
   },
   {
-    title: "Lead Ferret",
+    title: "Lead-Parrot",
     description: "AI-powered lead generation platform delivering verified, targeted leads in seconds with intelligent outreach templates.",
     images: [leadFerretImg],
     category: "website",
