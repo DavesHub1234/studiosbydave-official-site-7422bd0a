@@ -1,45 +1,42 @@
 
-# Fix and Test Contact Form Email Function
+# Add Google Analytics (GA4) Tracking
 
-## Issues Found
+## Overview
+This plan adds Google Analytics 4 tracking to your website using your measurement ID **G-7PYLQDFZ6M**. This will allow Google Analytics to track all page views and user interactions across your site.
 
-1. **Contact form UI is missing** -- The Contact page has the form logic (schema, useForm, onSubmit) but the actual form fields and submit button are not rendered in the JSX. The form was likely removed at some point. It needs to be added back so you can actually submit from the page.
+## What Will Change
 
-2. **CORS will block preview requests** -- The edge function's allowed origins list does not include the current Lovable preview URL (`https://id-preview--70ddf45e-...lovable.app`). Requests from the preview will be blocked. The fix is to use wildcard CORS (`*`) for the preview, or add the preview origin.
+### File: `index.html`
+Add the Google Analytics gtag.js script in the `<head>` section. This is the recommended placement by Google for accurate tracking.
 
-3. **Edge function still sends to david.richardson email** -- Line 176 of the edge function still sends notification emails to both `dx1creations25@gmail.com` AND `david.richardson@studiosbydave.com`. Per your earlier request, the second address should be removed (at least temporarily).
-
-## Plan
-
-### Step 1: Restore the contact form on the Contact page
-Add back the form fields (first name, last name, email, phone, business type, message) and submit button to the Contact page JSX, wired up to the existing `onSubmit` handler that's already in the code.
-
-### Step 2: Fix CORS in the edge function
-Update the `allowedOrigins` array and CORS headers to allow requests from the Lovable preview URL. Will use a broader approach to support both preview and production domains.
-
-### Step 3: Remove david.richardson email from edge function
-Update the notification email `to` array on line 176 to only send to `dx1creations25@gmail.com`.
-
-### Step 4: Deploy and test
-Deploy the updated edge function and verify the form submits successfully from the preview.
-
----
-
-### Technical Details
-
-**Files to modify:**
-- `src/pages/Contact.tsx` -- Add form JSX between the contact info section and the CTA card
-- `supabase/functions/send-contact-email/index.ts` -- Fix CORS origins and remove david.richardson email
-
-**Edge function CORS fix:**
-```typescript
-const corsHeaders = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
-};
+The code to be added:
+```html
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7PYLQDFZ6M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7PYLQDFZ6M');
+</script>
 ```
 
-**Email recipient fix (line 176):**
-```typescript
-to: ["dx1creations25@gmail.com"],
-```
+This will be placed after the resource hints section and before the Google Fonts section for optimal loading.
+
+## What This Enables
+- **Page view tracking** - Every page visit is recorded
+- **User behavior insights** - See how visitors navigate your site
+- **Traffic sources** - Know where your visitors come from
+- **Real-time monitoring** - View active users on your site
+- **Conversion tracking** - Track goals you set up in Google Analytics
+
+## After Implementation
+1. Publish the site update
+2. Visit your site and navigate a few pages
+3. In Google Analytics, go to **Reports → Realtime** to verify tracking is working
+4. Data typically appears within 24-48 hours in standard reports
+
+## Technical Details
+- Uses the official Google gtag.js library
+- Script loads asynchronously (`async`) so it won't slow down page loading
+- Works with your existing Omnisend tracking without conflicts

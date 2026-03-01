@@ -9,22 +9,10 @@ const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
 const supabaseServiceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
 const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
-// Allowed origins for CORS - restrict to trusted domains
-const allowedOrigins = [
-  'https://studiosbydave.com',
-  'https://www.studiosbydave.com',
-  'https://tkkqlidhwbdaqramfixu.lovableproject.com', // Lovable preview
-];
-
-// Get CORS headers with origin validation
-function getCorsHeaders(req: Request): Record<string, string> {
-  const origin = req.headers.get('origin') || '';
-  const allowedOrigin = allowedOrigins.includes(origin) ? origin : allowedOrigins[0];
-  return {
-    "Access-Control-Allow-Origin": allowedOrigin,
-    "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
-  };
-}
+const corsHeaders = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type, x-supabase-client-platform, x-supabase-client-platform-version, x-supabase-client-runtime, x-supabase-client-runtime-version',
+};
 
 interface ContactEmailRequest {
   firstName: string;
@@ -73,7 +61,7 @@ function checkRateLimit(ip: string): boolean {
 }
 
 const handler = async (req: Request): Promise<Response> => {
-  const corsHeaders = getCorsHeaders(req);
+  
   
   // Handle CORS preflight requests
   if (req.method === "OPTIONS") {
@@ -173,7 +161,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Send notification email to business owner (with XSS protection)
     const notificationEmail = await resend.emails.send({
       from: "Studios by Dave Contact Form <onboarding@resend.dev>",
-      to: ["dx1creations25@gmail.com", "david.richardson@studiosbydave.com"],
+      to: ["dx1creations25@gmail.com"],
       subject: `New Contact Form Submission from ${sanitizeHeader(firstName)} ${sanitizeHeader(lastName)}`,
       html: `
         <h2>New Contact Form Submission</h2>
@@ -222,7 +210,7 @@ const handler = async (req: Request): Promise<Response> => {
     );
   } catch (error: any) {
     console.error("Error in send-contact-email function:", error);
-    const corsHeaders = getCorsHeaders(req);
+    
     return new Response(
       JSON.stringify({ error: "Failed to send email. Please try again or contact us directly." }),
       {
