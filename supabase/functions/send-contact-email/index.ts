@@ -210,7 +210,7 @@ const handler = async (req: Request): Promise<Response> => {
     );
   } catch (error: any) {
     console.error("Error in send-contact-email function:", error);
-    const corsHeaders = getCorsHeaders(req);
+    
     return new Response(
       JSON.stringify({ error: "Failed to send email. Please try again or contact us directly." }),
       {
