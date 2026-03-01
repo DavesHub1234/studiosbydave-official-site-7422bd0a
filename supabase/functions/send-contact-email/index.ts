@@ -161,7 +161,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Send notification email to business owner (with XSS protection)
     const notificationEmail = await resend.emails.send({
       from: "Studios by Dave Contact Form <onboarding@resend.dev>",
-      to: ["dx1creations25@gmail.com", "david.richardson@studiosbydave.com"],
+      to: ["dx1creations25@gmail.com"],
       subject: `New Contact Form Submission from ${sanitizeHeader(firstName)} ${sanitizeHeader(lastName)}`,
       html: `
         <h2>New Contact Form Submission</h2>
