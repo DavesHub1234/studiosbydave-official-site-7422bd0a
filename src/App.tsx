@@ -45,7 +45,7 @@ const App = () => (
           <Route path="/studiosweb" element={<StudiosWeb />} />
           <Route path="/studiosweb/web-design" element={<WebDesign />} />
           <Route path="/studiosweb/branding" element={<Branding />} />
-          <Route path="/studiosweb/ai-automations" element={<AIAutomations />} />
+          {/* <Route path="/studiosweb/ai-automations" element={<AIAutomations />} /> */}
           <Route path="/studiosweb/google-optimization" element={<GoogleOptimization />} />
           <Route path="/studiosweb/seo" element={<SEOPage />} />
           <Route path="/studiosweb/promos" element={<Promos />} />

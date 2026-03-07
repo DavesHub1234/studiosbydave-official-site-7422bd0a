@@ -35,10 +35,6 @@ const Navigation = () => {
     path: "/studiosweb/google-optimization",
     description: "Dominate local search results"
   }, {
-    name: "AI Automations",
-    path: "/studiosweb/ai-automations",
-    description: "Intelligent business automation"
-  }, {
     name: "Promos",
     path: "/studiosweb/promos",
     description: "Current promotions & offers"

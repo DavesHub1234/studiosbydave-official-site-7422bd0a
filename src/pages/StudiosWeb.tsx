@@ -31,12 +31,6 @@ const StudiosWeb = () => {
     icon: TrendingUp,
     path: "/studiosweb/google-optimization",
     features: ["Google My Business", "Local Rankings", "Review Management", "Maps Optimization"]
-  }, {
-    title: "AI Automations",
-    description: "Streamline your business processes with intelligent automation solutions",
-    icon: Bot,
-    path: "/studiosweb/ai-automations",
-    features: ["Lead Generation", "Customer Support", "Workflow Automation", "Data Analysis"]
   }];
   return <div className="min-h-screen">
       <SimpleSEO title="StudiosWeb - Complete Digital Solutions for Your Business" description="Comprehensive web design, SEO, branding, and automation services for roofing contractors, landscaping companies, and solar panel installers. Transform your digital presence." keywords="web design services, SEO optimization, business branding, AI automation, digital marketing, contractor websites" />

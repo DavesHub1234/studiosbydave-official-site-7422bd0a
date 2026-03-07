@@ -10,7 +10,7 @@ const footerLinks: InternalLink[] = [
   { text: "Web Design Services", url: "/studiosweb/web-design", description: "Custom contractor websites" },
   { text: "SEO Optimization", url: "/studiosweb/seo", description: "Rank higher in search results" },
   { text: "Branding & Logo Design", url: "/studiosweb/branding", description: "Professional brand identity" },
-  { text: "AI Automations", url: "/studiosweb/ai-automations", description: "Smart business automation" },
+  
   { text: "Google Optimization", url: "/studiosweb/google-optimization", description: "Local search dominance" },
 ];
 
