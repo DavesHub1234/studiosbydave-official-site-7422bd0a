@@ -25,15 +25,6 @@ const services = [{
   gradient: "from-accent to-secondary",
   backdrop: brandingBackdrop
 }, {
-  icon: Bot,
-  title: "AI Automations",
-  description: "Cutting-edge AI solutions that streamline operations, improve customer service, and maintain the jobs that we support.",
-  features: ["Automated Lead Follow-up", "Customer Service Chatbots", "Appointment Scheduling", "Review Management"],
-  link: "/studiosweb/ai-automations",
-  linkText: "Learn About AI Automations",
-  gradient: "from-secondary to-primary",
-  backdrop: aiBackdrop
-}, {
   icon: Search,
   title: "Google Optimization",
   description: "Complete Google ecosystem optimization to dominate local search results and attract more customers.",

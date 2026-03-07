@@ -1,39 +1,42 @@
 
+# Add Google Analytics (GA4) Tracking
 
-# Temporarily Remove AI Automations + Add Lead-Parrot Page Under Studios Gear
+## Overview
+This plan adds Google Analytics 4 tracking to your website using your measurement ID **G-7PYLQDFZ6M**. This will allow Google Analytics to track all page views and user interactions across your site.
 
-## What We'll Do
+## What Will Change
 
-### 1. Hide AI Automations (keep the page file and images intact)
-- **Comment out** the AI Automations entry from the `studiosWebServices` array in `Navigation.tsx` (both desktop and mobile use the same array, so one change covers both)
-- **Remove** the AI Automations card from the `services` array in `ServicesSection.tsx` (homepage) — keep the `aiBackdrop` import so the image stays in the project
-- **Remove** the AI Automations entry from the `services` array in `StudiosWeb.tsx` (StudiosWeb hub page)
-- **Comment out** the route in `App.tsx` so the page isn't accessible but the file (`AIAutomations.tsx`) and all its images remain untouched
-- **Remove** the AI Automations link from `InternalLinks.tsx`
-- **Remove** from `public/sitemap.xml`
+### File: `index.html`
+Add the Google Analytics gtag.js script in the `<head>` section. This is the recommended placement by Google for accurate tracking.
 
-### 2. Create Lead-Parrot page under Studios Gear
-- **Create** `src/pages/LeadParrot.tsx` — a dedicated page for the Lead-Parrot product, using the existing `lead-parrot.png` portfolio image and the description from the portfolio data as a starting point
-- **Add route** `/studiosgear/lead-parrot` in `App.tsx`
-- **Update** `StudiosGear.tsx` to replace the "Coming Soon" content with a card/link to the Lead-Parrot sub-page
-- **Update Navigation** — add a collapsible dropdown for Studios Gear (similar to Studios Web) with Lead-Parrot as a sub-item, or add Lead-Parrot as a direct link; since there's only one sub-page for now, a simple link on the Studios Gear page is cleaner
-- **Add** to `public/sitemap.xml`
+The code to be added:
+```html
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7PYLQDFZ6M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7PYLQDFZ6M');
+</script>
+```
 
-### Technical Details
+This will be placed after the resource hints section and before the Google Fonts section for optimal loading.
 
-**Files to modify:**
-- `src/components/Navigation.tsx` — remove AI Automations from `studiosWebServices`
-- `src/components/ServicesSection.tsx` — remove AI Automations from `services` array (keep import)
-- `src/pages/StudiosWeb.tsx` — remove AI Automations from services list
-- `src/components/InternalLinks.tsx` — remove AI Automations link
-- `src/App.tsx` — comment out AI Automations route, add Lead-Parrot route
-- `public/sitemap.xml` — remove ai-automations URL, add lead-parrot URL
+## What This Enables
+- **Page view tracking** - Every page visit is recorded
+- **User behavior insights** - See how visitors navigate your site
+- **Traffic sources** - Know where your visitors come from
+- **Real-time monitoring** - View active users on your site
+- **Conversion tracking** - Track goals you set up in Google Analytics
 
-**Files to create:**
-- `src/pages/LeadParrot.tsx` — Lead-Parrot product page with hero, features, and CTA
+## After Implementation
+1. Publish the site update
+2. Visit your site and navigate a few pages
+3. In Google Analytics, go to **Reports → Realtime** to verify tracking is working
+4. Data typically appears within 24-48 hours in standard reports
 
-**Files preserved (no changes):**
-- `src/pages/AIAutomations.tsx` — kept as-is for future re-enablement
-- `src/assets/ai-backdrop.jpeg` — kept
-- `src/assets/ai-automation-flow.png` — kept
-
+## Technical Details
+- Uses the official Google gtag.js library
+- Script loads asynchronously (`async`) so it won't slow down page loading
+- Works with your existing Omnisend tracking without conflicts

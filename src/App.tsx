@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import StudiosWeb from "./pages/StudiosWeb";
 import StudiosInk from "./pages/StudiosInk";
 import StudiosGear from "./pages/StudiosGear";
+import LeadParrot from "./pages/LeadParrot";
 import SacredArsenal from "./pages/SacredArsenal";
 import Blog from "./pages/Blog";
 import BlogArticle1 from "./pages/BlogArticle1";
@@ -45,7 +46,7 @@ const App = () => (
           <Route path="/studiosweb" element={<StudiosWeb />} />
           <Route path="/studiosweb/web-design" element={<WebDesign />} />
           <Route path="/studiosweb/branding" element={<Branding />} />
-          <Route path="/studiosweb/ai-automations" element={<AIAutomations />} />
+          {/* <Route path="/studiosweb/ai-automations" element={<AIAutomations />} /> */}
           <Route path="/studiosweb/google-optimization" element={<GoogleOptimization />} />
           <Route path="/studiosweb/seo" element={<SEOPage />} />
           <Route path="/studiosweb/promos" element={<Promos />} />
@@ -53,6 +54,7 @@ const App = () => (
           <Route path="/studiosink" element={<StudiosInk />} />
           <Route path="/studiosink/sacred-arsenal" element={<SacredArsenal />} />
           <Route path="/studiosgear" element={<StudiosGear />} />
+          <Route path="/studiosgear/lead-parrot" element={<LeadParrot />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/why-choose-studios-by-dave" element={<BlogArticle1 />} />
           <Route path="/blog/does-your-business-need-a-website-2026" element={<BlogArticle2 />} />

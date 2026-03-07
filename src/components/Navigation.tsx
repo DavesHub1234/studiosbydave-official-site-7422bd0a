@@ -35,10 +35,6 @@ const Navigation = () => {
     path: "/studiosweb/google-optimization",
     description: "Dominate local search results"
   }, {
-    name: "AI Automations",
-    path: "/studiosweb/ai-automations",
-    description: "Intelligent business automation"
-  }, {
     name: "Promos",
     path: "/studiosweb/promos",
     description: "Current promotions & offers"
@@ -89,10 +85,19 @@ const Navigation = () => {
               Studios Ink
             </Link>
 
-            {/* StudiosGear */}
-            <Link to="/studiosgear" className={`text-sm font-bold transition-colors hover:text-primary ${isActive('/studiosgear') ? "text-primary border-b-2 border-primary pb-1" : "text-primary"}`}>
-              Studios Gear
-            </Link>
+            {/* StudiosGear with sub-link */}
+            <div className="relative group">
+              <Link to="/studiosgear" className={`text-sm font-bold transition-colors hover:text-primary ${location.pathname.startsWith('/studiosgear') ? "text-primary border-b-2 border-primary pb-1" : "text-primary"}`}>
+                Studios Gear
+              </Link>
+              <div className="absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg border border-border/50 z-50 overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div className="p-2">
+                  <Link to="/studiosgear/lead-parrot" className="text-sm whitespace-nowrap px-4 py-2 rounded-md transition-all hover:bg-muted hover:text-primary font-medium text-foreground/80 block">
+                    Lead-Parrot
+                  </Link>
+                </div>
+              </div>
+            </div>
 
             {/* Blog */}
             <Link to="/blog" className={`font-poofy text-base transition-all hover:scale-105 ${isActive('/blog') ? "border-b-2 border-primary pb-1" : ""}`}>
@@ -151,9 +156,14 @@ const Navigation = () => {
 
             {/* Mobile StudiosGear */}
             <div className="border-t pt-4">
-              <Link to="/studiosgear" onClick={() => setIsOpen(false)} className={`block text-base font-bold transition-colors hover:text-primary ${isActive('/studiosgear') ? "text-primary" : "text-primary"}`}>
+              <Link to="/studiosgear" onClick={() => setIsOpen(false)} className={`block text-base font-bold transition-colors hover:text-primary ${location.pathname.startsWith('/studiosgear') ? "text-primary" : "text-primary"}`}>
                 Studios Gear
               </Link>
+              <div className="ml-4 mt-2">
+                <Link to="/studiosgear/lead-parrot" onClick={() => setIsOpen(false)} className={`block text-sm hover:text-primary transition-colors text-muted-foreground ${isActive('/studiosgear/lead-parrot') ? "text-primary" : ""}`}>
+                  Lead-Parrot
+                </Link>
+              </div>
             </div>
 
             {/* Mobile Blog */}
