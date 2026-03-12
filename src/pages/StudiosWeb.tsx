@@ -11,7 +11,7 @@ const StudiosWeb = () => {
     title: "Web Design & Development",
     description: "Professional, responsive websites that convert visitors into customers",
     icon: Globe,
-    path: "/studiosweb/web-design",
+    path: "/studiosweb/webdesign",
     features: ["Custom Design", "Mobile Responsive", "Fast Loading", "User-Friendly"]
   }, {
     title: "Logo Design & Branding",

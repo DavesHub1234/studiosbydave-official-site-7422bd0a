@@ -11,7 +11,7 @@ const services = [{
   title: "Web Design & Development",
   description: "Custom, responsive websites that convert visitors into customers. Optimized for local contractors and service businesses.",
   features: ["Mobile-First Design", "Lightning Fast Loading", "Lead Generation Forms", "Local SEO Built-In"],
-  link: "/studiosweb/web-design",
+  link: "/studiosweb/webdesign",
   linkText: "Learn About Web Design",
   gradient: "from-primary to-accent",
   backdrop: webDesignBackdrop
