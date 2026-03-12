@@ -16,7 +16,7 @@ const SimpleSEO = ({
   description,
   keywords,
   canonical,
-  ogImage = "https://studiosbydave.com/og-image.jpg",
+  ogImage = "https://www.studiosbydave.com/og-image.jpg",
   ogType = "website",
   structuredData,
   noindex = false
