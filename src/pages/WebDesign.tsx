@@ -11,8 +11,8 @@ import { breadcrumbSchema } from "@/data/structuredData";
 
 const WebDesign = () => {
   const breadcrumbs = breadcrumbSchema([
-    { name: "Home", url: "https://studiosbydave.com" },
-    { name: "Web Design", url: "https://studiosbydave.com/web-design" }
+    { name: "Home", url: "https://www.studiosbydave.com" },
+    { name: "Web Design", url: "https://www.studiosbydave.com/web-design" }
   ]);
 
   const webDesignSchema = {

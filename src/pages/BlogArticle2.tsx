@@ -11,7 +11,7 @@ const BlogArticle2 = () => {
         title="Does Your Business Really Need a Website in 2026? | Studios by Dave Blog"
         description="Discover why most businesses still need a website in 2026, what role it plays in trust-building and discovery, and what happens if you skip it."
         keywords="do I need a website 2026, business website importance, website vs social media, web presence, Studios by Dave"
-        canonical="https://studiosbydave.com/blog/does-your-business-need-a-website-2026"
+        canonical="https://www.studiosbydave.com/blog/does-your-business-need-a-website-2026"
       />
       <Navigation />
       

@@ -11,7 +11,7 @@ const BlogArticle3 = () => {
         title="5 Common Website Mistakes Costing Local Businesses Customers | Studios by Dave Blog"
         description="Discover the top website mistakes hurting local businesses and learn how to fix them. From slow loading speeds to poor mobile design, get expert tips from Studios by Dave."
         keywords="website mistakes, local business website, mobile responsive, local SEO, website speed, Shelby NC web design"
-        canonical="https://studiosbydave.com/blog/website-mistakes-costing-customers"
+        canonical="https://www.studiosbydave.com/blog/website-mistakes-costing-customers"
       />
       <Navigation />
       

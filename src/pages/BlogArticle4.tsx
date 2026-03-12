@@ -11,7 +11,7 @@ const BlogArticle4 = () => {
         title="Local SEO Essentials for Shelby Businesses in 2026 | Studios by Dave Blog"
         description="Learn why local SEO is more important than ever in 2026 with AI search, zero-click results, and voice assistants. Essential tips for Shelby NC businesses."
         keywords="local SEO Shelby NC, Google Business Profile optimization, AI search 2026, zero-click search, voice search SEO, Cleveland County SEO"
-        canonical="https://studiosbydave.com/blog/local-seo-essentials-2026"
+        canonical="https://www.studiosbydave.com/blog/local-seo-essentials-2026"
       />
       <Navigation />
       

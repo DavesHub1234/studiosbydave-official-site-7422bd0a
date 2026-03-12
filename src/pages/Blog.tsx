@@ -50,7 +50,7 @@ const Blog = () => {
         title="Blog | Studios by Dave"
         description="Expert insights, tips, and industry news from Studios by Dave. Web design, branding, SEO, and digital marketing content for contractors and local businesses in Shelby, NC."
         keywords="contractor blog, web design tips, SEO insights, digital marketing news, branding advice, Shelby NC"
-        canonical="https://studiosbydave.com/blog"
+        canonical="https://www.studiosbydave.com/blog"
       />
       <Navigation />
       

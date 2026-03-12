@@ -183,7 +183,7 @@ const handler = async (req: Request): Promise<Response> => {
       html: `
         <h1>Thank you for contacting Studios by Dave, ${escapeHtml(firstName)}!</h1>
         <p>We have received your message and will get back to you within 24 hours.</p>
-        <p>In the meantime, feel free to explore our services at <a href="https://studiosbydave.com">studiosbydave.com</a>.</p>
+        <p>In the meantime, feel free to explore our services at <a href="https://www.studiosbydave.com">studiosbydave.com</a>.</p>
         <hr>
         <p><strong>Your message:</strong></p>
         <p>${escapeHtml(message).replace(/\n/g, '<br>')}</p>

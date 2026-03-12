@@ -77,8 +77,8 @@ const Contact = () => {
   });
 
   const breadcrumbs = breadcrumbSchema([
-  { name: "Home", url: "https://studiosbydave.com" },
-  { name: "Contact", url: "https://studiosbydave.com/contact" }]
+  { name: "Home", url: "https://www.studiosbydave.com" },
+  { name: "Contact", url: "https://www.studiosbydave.com/contact" }]
   );
 
   const contactSchema = {
