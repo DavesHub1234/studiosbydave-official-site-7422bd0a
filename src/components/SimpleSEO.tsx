@@ -16,14 +16,14 @@ const SimpleSEO = ({
   description,
   keywords,
   canonical,
-  ogImage = "https://studiosbydave.com/og-image.jpg",
+  ogImage = "https://www.studiosbydave.com/og-image.jpg",
   ogType = "website",
   structuredData,
   noindex = false
 }: SEOProps) => {
   useEffect(() => {
     const fullTitle = title.includes("Studios by Dave") ? title : `${title} | Studios by Dave`;
-    const url = canonical || `https://studiosbydave.com${window.location.pathname}`;
+    const url = canonical || `https://www.studiosbydave.com${window.location.pathname}`;
 
     // Update document title
     document.title = fullTitle;

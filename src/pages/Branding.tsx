@@ -13,8 +13,8 @@ import brandKitShowcase from "@/assets/brand-kit-showcase.png";
 
 const Branding = () => {
   const breadcrumbs = breadcrumbSchema([
-    { name: "Home", url: "https://studiosbydave.com" },
-    { name: "Logo Design & Branding", url: "https://studiosbydave.com/branding" }
+    { name: "Home", url: "https://www.studiosbydave.com" },
+    { name: "Logo Design & Branding", url: "https://www.studiosbydave.com/branding" }
   ]);
 
   const brandingSchema = {

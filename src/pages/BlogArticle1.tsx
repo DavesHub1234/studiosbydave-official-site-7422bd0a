@@ -11,7 +11,7 @@ const BlogArticle1 = () => {
         title="Why Choose Studios by Dave Over the Local Competition? | Studios by Dave Blog"
         description="A Local Partner for Professional Web Design, Branding, and SEO in Shelby, NC. Learn what makes Studios by Dave different from other local options."
         keywords="Shelby NC web design, local web designer, branding Shelby NC, SEO Cleveland County, Studios by Dave"
-        canonical="https://studiosbydave.com/blog/why-choose-studios-by-dave"
+        canonical="https://www.studiosbydave.com/blog/why-choose-studios-by-dave"
       />
       <Navigation />
       

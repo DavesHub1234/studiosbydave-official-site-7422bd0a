@@ -11,8 +11,8 @@ import { breadcrumbSchema } from "@/data/structuredData";
 
 const GoogleOptimization = () => {
   const breadcrumbs = breadcrumbSchema([
-    { name: "Home", url: "https://studiosbydave.com" },
-    { name: "Google Optimization", url: "https://studiosbydave.com/google-optimization" }
+    { name: "Home", url: "https://www.studiosbydave.com" },
+    { name: "Google Optimization", url: "https://www.studiosbydave.com/google-optimization" }
   ]);
 
   const googleOptimizationSchema = {

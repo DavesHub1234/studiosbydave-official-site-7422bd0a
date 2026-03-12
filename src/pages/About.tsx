@@ -13,8 +13,8 @@ import googleBackdrop from "@/assets/google-backdrop.jpeg";
 
 const About = () => {
   const breadcrumbs = breadcrumbSchema([
-    { name: "Home", url: "https://studiosbydave.com" },
-    { name: "About Us", url: "https://studiosbydave.com/about" }
+    { name: "Home", url: "https://www.studiosbydave.com" },
+    { name: "About Us", url: "https://www.studiosbydave.com/about" }
   ]);
 
   return (

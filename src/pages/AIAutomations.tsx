@@ -11,8 +11,8 @@ import { breadcrumbSchema } from "@/data/structuredData";
 
 const AIAutomations = () => {
   const breadcrumbs = breadcrumbSchema([
-    { name: "Home", url: "https://studiosbydave.com" },
-    { name: "AI Automations", url: "https://studiosbydave.com/ai-automations" }
+    { name: "Home", url: "https://www.studiosbydave.com" },
+    { name: "AI Automations", url: "https://www.studiosbydave.com/ai-automations" }
   ]);
 
   const aiAutomationSchema = {
