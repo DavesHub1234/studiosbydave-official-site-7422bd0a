@@ -5,9 +5,9 @@ export const organizationSchema = {
   "name": "Studios by Dave",
   "alternateName": "StudiosbyDave",
   "description": "Professional web design, SEO, AI automations, and digital marketing for roofing contractors, landscaping companies, and solar panel installers.",
-  "url": "https://studiosbydave.com",
-  "logo": "https://studiosbydave.com/new-logo.png",
-  "image": "https://studiosbydave.com/lovable-uploads/88912462-92f4-48cf-8aaf-c9507974f8ea-optimized.jpg",
+  "url": "https://www.studiosbydave.com",
+  "logo": "https://www.studiosbydave.com/new-logo.png",
+  "image": "https://www.studiosbydave.com/lovable-uploads/88912462-92f4-48cf-8aaf-c9507974f8ea-optimized.jpg",
   "telephone": "+1-704-473-8188",
   "email": "dx1creations25@gmail.com",
   "contactPoint": {
