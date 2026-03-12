@@ -146,7 +146,7 @@ export const localBusinessSchema = {
     "latitude": "35.2901",
     "longitude": "-81.5357"
   },
-  "url": "https://studiosbydave.com",
+  "url": "https://www.studiosbydave.com",
   "priceRange": "$$",
   "openingHours": "Mo-Fr 09:00-17:00",
   "aggregateRating": {
