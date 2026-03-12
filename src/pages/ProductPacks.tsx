@@ -54,6 +54,82 @@ const packs = [
   },
 ];
 
+// Fanned cards visual component
+const FannedCards = ({ variant }: { variant: "content" | "branding" | "artist" }) => {
+  const colorSets = {
+    content: [
+      "from-primary/30 to-secondary/40",
+      "from-secondary/25 to-primary/35",
+      "from-primary/20 to-accent/30",
+    ],
+    branding: [
+      "from-secondary/30 to-primary/40",
+      "from-primary/25 to-secondary/35",
+      "from-accent/20 to-primary/30",
+    ],
+    artist: [
+      "from-primary/30 to-accent/40",
+      "from-accent/25 to-secondary/35",
+      "from-secondary/20 to-primary/30",
+    ],
+  };
+
+  const colors = colorSets[variant];
+
+  return (
+    <div className="relative w-full h-full flex items-center justify-center">
+      {/* Card 3 - back */}
+      <div
+        className={`absolute w-40 h-56 md:w-48 md:h-64 rounded-xl bg-gradient-to-br ${colors[2]} border border-border/40 shadow-lg backdrop-blur-sm`}
+        style={{ transform: "rotate(12deg) translateX(20px)" }}
+      >
+        <div className="p-4 h-full flex flex-col justify-between">
+          <div className="w-full h-3 bg-white/20 rounded-full" />
+          <div className="space-y-2">
+            <div className="w-3/4 h-2 bg-white/15 rounded-full" />
+            <div className="w-1/2 h-2 bg-white/10 rounded-full" />
+          </div>
+          <div className="w-10 h-10 rounded-lg bg-white/10" />
+        </div>
+      </div>
+      {/* Card 2 - middle */}
+      <div
+        className={`absolute w-40 h-56 md:w-48 md:h-64 rounded-xl bg-gradient-to-br ${colors[1]} border border-border/40 shadow-xl backdrop-blur-sm`}
+        style={{ transform: "rotate(2deg) translateX(0px)" }}
+      >
+        <div className="p-4 h-full flex flex-col justify-between">
+          <div className="w-12 h-12 rounded-lg bg-white/15 flex items-center justify-center">
+            <div className="w-6 h-6 rounded-full bg-white/20" />
+          </div>
+          <div className="space-y-2">
+            <div className="w-full h-2 bg-white/15 rounded-full" />
+            <div className="w-2/3 h-2 bg-white/10 rounded-full" />
+            <div className="w-4/5 h-2 bg-white/10 rounded-full" />
+          </div>
+          <div className="flex gap-2">
+            <div className="w-8 h-8 rounded bg-white/10" />
+            <div className="w-8 h-8 rounded bg-white/10" />
+          </div>
+        </div>
+      </div>
+      {/* Card 1 - front */}
+      <div
+        className={`absolute w-40 h-56 md:w-48 md:h-64 rounded-xl bg-gradient-to-br ${colors[0]} border border-border/40 shadow-2xl backdrop-blur-sm`}
+        style={{ transform: "rotate(-8deg) translateX(-20px)" }}
+      >
+        <div className="p-4 h-full flex flex-col justify-between">
+          <div className="w-full h-20 rounded-lg bg-white/10" />
+          <div className="space-y-2">
+            <div className="w-full h-2.5 bg-white/20 rounded-full" />
+            <div className="w-3/4 h-2 bg-white/15 rounded-full" />
+          </div>
+          <div className="w-full h-8 rounded-lg bg-white/15" />
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const ProductPacks = () => {
   return (
     <div className="min-h-screen">
@@ -66,20 +142,25 @@ const ProductPacks = () => {
 
       <main>
         {/* Hero */}
-        <section className="bg-gradient-to-br from-primary/5 via-accent/10 to-primary/5 py-20 md:py-28">
+        <section className="py-20 md:py-28" style={{ background: 'linear-gradient(135deg, hsl(218 49% 15%) 0%, hsl(218 49% 22%) 50%, hsl(218 49% 18%) 100%)' }}>
           <div className="container mx-auto px-4 text-center max-w-4xl">
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-6 border border-white/20">
               <Sparkles className="h-4 w-4" />
               New Service
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              <span className="text-foreground">AI‑Powered </span>
-              <span className="bg-gradient-to-r from-purple-500 via-violet-500 to-purple-600 bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white">
+              AI‑Powered{" "}
+              <span
+                className="bg-clip-text text-transparent"
+                style={{
+                  backgroundImage: 'linear-gradient(135deg, hsl(45 100% 75%) 0%, hsl(38 100% 65%) 25%, hsl(45 100% 85%) 50%, hsl(35 100% 55%) 75%, hsl(45 100% 70%) 100%)',
+                }}
+              >
                 Product Packs
               </span>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Custom image packs, content bundles, and branding kits — designed with AI precision, 
+            <p className="text-lg md:text-xl text-white/80 mb-8 max-w-3xl mx-auto">
+              Custom image packs, content bundles, and branding kits — designed with AI precision,
               refined by a real designer. One order. Everything you need. Zero hassle.
             </p>
             <Link to="/contact">
@@ -152,9 +233,9 @@ const ProductPacks = () => {
                         </CardContent>
                       </div>
 
-                      {/* Accent side */}
-                      <div className="hidden lg:flex flex-1 items-center justify-center bg-gradient-to-br from-primary/5 to-accent/10 p-12">
-                        <Icon className="h-32 w-32 text-primary/20" />
+                      {/* Fanned cards visual side */}
+                      <div className="hidden lg:flex flex-1 items-center justify-center bg-muted/30 p-12 min-h-[320px]">
+                        <FannedCards variant={pack.id as "content" | "branding" | "artist"} />
                       </div>
                     </div>
                   </Card>
