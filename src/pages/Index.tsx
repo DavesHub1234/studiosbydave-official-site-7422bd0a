@@ -3,7 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
 import NonExclusiveSection from "@/components/NonExclusiveSection";
 import PromotionMarquee from "@/components/PromotionMarquee";
-import PromotionalSections from "@/components/PromotionalSections";
+
 import Footer from "@/components/Footer";
 import InternalLinksFooter from "@/components/InternalLinks";
 import SimpleSEO from "@/components/SimpleSEO";
