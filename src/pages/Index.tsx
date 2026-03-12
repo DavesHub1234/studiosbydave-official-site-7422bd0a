@@ -25,7 +25,7 @@ const Index = () => {
       <main>
         <HeroSection />
         <ServicesSection />
-        <PromotionalSections />
+        
         <NonExclusiveSection />
       </main>
       <InternalLinksFooter />
