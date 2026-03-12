@@ -130,7 +130,7 @@ export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Studios by Dave",
-  "image": "https://studiosbydave.com/new-logo.png",
+  "image": "https://www.studiosbydave.com/new-logo.png",
   "telephone": "+1-704-473-8188",
   "email": "dx1creations25@gmail.com",
   "address": {
