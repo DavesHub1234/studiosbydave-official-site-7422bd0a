@@ -20,7 +20,7 @@ const Navigation = () => {
   }];
   const studiosWebServices = [{
     name: "Web Design",
-    path: "/studiosweb/web-design",
+    path: "/studiosweb/webdesign",
     description: "Professional responsive websites"
   }, {
     name: "Logo Design & Branding",

@@ -6,7 +6,7 @@ const Footer = () => {
   const footerLinks = {
     services: [{
       name: "Web Design",
-      href: "/studiosweb/web-design"
+      href: "/studiosweb/webdesign"
     }, {
       name: "Logo Design & Branding",
       href: "/studiosweb/branding"

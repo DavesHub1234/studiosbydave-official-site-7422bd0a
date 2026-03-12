@@ -5,6 +5,11 @@
       "has": [{ "type": "host", "value": "studiosbydave.com" }],
       "destination": "https://www.studiosbydave.com/:path",
       "permanent": true
+    },
+    {
+      "source": "/studiosweb/web-design",
+      "destination": "/studiosweb/webdesign",
+      "permanent": true
     }
   ],
   "rewrites": [
