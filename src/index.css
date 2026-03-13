@@ -289,6 +289,52 @@
     animation: dust-float-right 3s ease-out infinite;
   }
 
+  /* Hero spacecraft slow spin */
+  @keyframes spacecraft-hover {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    25% {
+      transform: rotate(2deg) scale(1.005);
+    }
+    50% {
+      transform: rotate(0deg) scale(1);
+    }
+    75% {
+      transform: rotate(-2deg) scale(1.005);
+    }
+    100% {
+      transform: rotate(0deg) scale(1);
+    }
+  }
+
+  @keyframes arms-sway {
+    0%, 100% {
+      filter: brightness(1) contrast(1);
+      transform: scaleX(1);
+    }
+    33% {
+      filter: brightness(1.03) contrast(1.01);
+      transform: scaleX(1.003);
+    }
+    66% {
+      filter: brightness(0.98) contrast(1.01);
+      transform: scaleX(0.997);
+    }
+  }
+
+  .animate-spacecraft-hover {
+    animation: spacecraft-hover 12s ease-in-out infinite;
+    transform-origin: center center;
+  }
+
+  .animate-spacecraft-hover::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    animation: arms-sway 8s ease-in-out infinite;
+  }
+
   /* Shimmer Reflection Animation */
   @keyframes shimmer {
     0% {
