@@ -143,26 +143,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      
-      {/* Facebook Post Preview Section */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="flex flex-col items-center">
-          <h2 className="text-2xl font-bold text-white mb-6 text-center">Latest from Facebook</h2>
-          <div className="rounded-xl overflow-hidden shadow-glow border border-white/20 bg-white/5 backdrop-blur-sm p-2">
-            <iframe 
-              src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fdpr1234%2Fposts%2Fpfbid0VuTB5xCm94nsEgFred3BvFsC2d1uBwNTPCc9WwqmHACiLtpRU3d21TtYuaQ5FoLBl&show_text=true&width=500" 
-              width="500" 
-              height="468" 
-              style={{border: 'none', overflow: 'hidden'}} 
-              scrolling="no" 
-              frameBorder="0" 
-              allowFullScreen={true} 
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-              title="Studios by Dave Facebook Post"
-            />
-          </div>
-        </div>
-      </div>
     </section>;
 };
 export default HeroSection;
