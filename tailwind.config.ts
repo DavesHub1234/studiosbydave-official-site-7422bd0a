@@ -116,27 +116,42 @@ export default {
 						backgroundPosition: '200% center'
 					}
 				},
-				'gentle-sway': {
-					'0%, 100%': {
-						transform: 'rotate(-0.3deg) translateY(0px)'
-					},
-					'25%': {
-						transform: 'rotate(0.2deg) translateY(1px)'
-					},
-					'50%': {
-						transform: 'rotate(0.3deg) translateY(0px)'
-					},
-					'75%': {
-						transform: 'rotate(-0.2deg) translateY(-1px)'
-					}
+			'gentle-sway': {
+				'0%, 100%': {
+					transform: 'rotate(-0.3deg) translateY(0px)'
+				},
+				'25%': {
+					transform: 'rotate(0.2deg) translateY(1px)'
+				},
+				'50%': {
+					transform: 'rotate(0.3deg) translateY(0px)'
+				},
+				'75%': {
+					transform: 'rotate(-0.2deg) translateY(-1px)'
 				}
 			},
-			animation: {
-				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out',
-				'shimmer': 'shimmer 3s ease-in-out infinite',
-				'gentle-sway': 'gentle-sway 4s ease-in-out infinite'
+			'spacecraft-orbit': {
+				'0%': { transform: 'rotate(0deg) scale(1)' },
+				'25%': { transform: 'rotate(0.8deg) scale(1.005)' },
+				'50%': { transform: 'rotate(0deg) scale(1)' },
+				'75%': { transform: 'rotate(-0.8deg) scale(1.005)' },
+				'100%': { transform: 'rotate(0deg) scale(1)' }
+			},
+			'grass-sway': {
+				'0%, 100%': { transform: 'skewX(0deg)' },
+				'25%': { transform: 'skewX(0.5deg)' },
+				'50%': { transform: 'skewX(0deg)' },
+				'75%': { transform: 'skewX(-0.5deg)' }
 			}
+		},
+		animation: {
+			'accordion-down': 'accordion-down 0.2s ease-out',
+			'accordion-up': 'accordion-up 0.2s ease-out',
+			'shimmer': 'shimmer 3s ease-in-out infinite',
+			'gentle-sway': 'gentle-sway 4s ease-in-out infinite',
+			'spacecraft-orbit': 'spacecraft-orbit 12s ease-in-out infinite',
+			'grass-sway': 'grass-sway 6s ease-in-out infinite'
+		}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],

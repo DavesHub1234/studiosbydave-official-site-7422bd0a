@@ -126,9 +126,24 @@ const HeroSection = () => {
             <div className="relative w-full lg:w-[110%] xl:w-[120%]">
               {/* Hero Image - Centered wider container */}
               <div className="aspect-square rounded-2xl overflow-hidden shadow-glow border border-white/20 relative">
-              <img src="/lovable-uploads/hero-human-inside.png" alt="Human Inside - futuristic UFO-shaped device with robotic arms holding website screens hovering over a sunlit meadow, representing Studios by Dave connecting humanity through technology" className="w-full h-full object-cover object-center" fetchPriority="high" decoding="sync" loading="eager" width="1024" height="1024" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 60vw, 700px" />
+                {/* Spacecraft image with slow rotation */}
+                <div className="w-full h-full animate-spacecraft-orbit">
+                  <img src="/lovable-uploads/hero-human-inside.png" alt="Human Inside - futuristic UFO-shaped device with robotic arms holding website screens hovering over a sunlit meadow, representing Studios by Dave connecting humanity through technology" className="w-full h-full object-cover object-center" fetchPriority="high" decoding="sync" loading="eager" width="1024" height="1024" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 60vw, 700px" />
+                </div>
+                
+                {/* Grass blowing overlay effect */}
+                <div className="absolute bottom-0 left-0 right-0 h-1/4 pointer-events-none animate-grass-sway" style={{
+                  background: 'linear-gradient(to top, transparent 0%, transparent 100%)',
+                  transformOrigin: 'bottom center'
+                }} />
+                
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-accent/10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-accent/10 pointer-events-none" />
+                
+                {/* Brain bulb logo on top right of craft */}
+                <div className="absolute top-6 right-6 sm:top-8 sm:right-8 w-10 h-10 sm:w-14 sm:h-14 z-20 animate-gentle-sway drop-shadow-[0_0_8px_rgba(139,92,246,0.6)]">
+                  <img src="/new-logo.png" alt="Studios by Dave brain logo" className="w-full h-full object-contain" loading="lazy" decoding="async" width="56" height="56" />
+                </div>
                 
                 {/* Company Mascot in corner */}
                 <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 w-20 h-20 sm:w-28 sm:h-28 animate-bounce z-20">
