@@ -69,9 +69,9 @@ const webProjects: PortfolioProject[] = [
 
 const appProjects: PortfolioProject[] = [
   {
-    title: "Mole Locator",
-    description: "Subterranean detection system using seismic frequency analysis with real-time scanning capabilities.",
-    images: [moleDetectiveImg],
+    title: "Lead-Parrot",
+    description: "AI-powered lead generation platform delivering verified, targeted leads in seconds with intelligent outreach templates.",
+    images: [leadParrotConferenceImg],
     category: "webapp",
   },
   {
