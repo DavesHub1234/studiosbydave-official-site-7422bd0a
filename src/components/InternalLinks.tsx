@@ -12,7 +12,7 @@ const footerLinks: InternalLink[] = [
   { text: "Branding & Logo Design", url: "/studiosweb/branding", description: "Professional brand identity" },
   
   { text: "Google Optimization", url: "/studiosweb/google-optimization", description: "Local search dominance" },
-  { text: "AI Product Packs", url: "/studiosweb/product-packs", description: "Turnkey content & branding kits" },
+  
 ];
 
 const InternalLinksFooter = () => {

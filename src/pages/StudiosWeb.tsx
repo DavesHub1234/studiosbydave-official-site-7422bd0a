@@ -26,12 +26,6 @@ const StudiosWeb = () => {
     path: "/studiosweb/seo",
     features: ["Keyword Research", "On-Page SEO", "Local SEO", "Content Strategy"]
   }, {
-    title: "Product Packs",
-    description: "Done‑for‑you AI content packs, branding kits, and creator visuals — one order, everything you need",
-    icon: Palette,
-    path: "/studiosweb/product-packs",
-    features: ["30‑Day Content Packs", "Branding & Image Kits", "Cover Art & Creator Visuals", "Ready‑to‑Post Files"]
-  }, {
     title: "Google Optimization",
     description: "Dominate local search results and attract more qualified leads",
     icon: TrendingUp,

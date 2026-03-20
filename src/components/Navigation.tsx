@@ -35,10 +35,6 @@ const Navigation = () => {
     path: "/studiosweb/google-optimization",
     description: "Dominate local search results"
   }, {
-    name: "Product Packs",
-    path: "/studiosweb/product-packs",
-    description: "AI content & branding packs"
-  }, {
     name: "Promos",
     path: "/studiosweb/promos",
     description: "Current promotions & offers"
