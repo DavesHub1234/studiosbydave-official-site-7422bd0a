@@ -292,19 +292,10 @@
   /* Hero spacecraft slow spin */
   @keyframes spacecraft-hover {
     0% {
-      transform: rotate(0deg) scale(1);
-    }
-    25% {
-      transform: rotate(2deg) scale(1.005);
-    }
-    50% {
-      transform: rotate(0deg) scale(1);
-    }
-    75% {
-      transform: rotate(-2deg) scale(1.005);
+      transform: rotate(0deg);
     }
     100% {
-      transform: rotate(0deg) scale(1);
+      transform: rotate(360deg);
     }
   }
 
@@ -324,7 +315,7 @@
   }
 
   .animate-spacecraft-hover {
-    animation: spacecraft-hover 12s ease-in-out infinite;
+    animation: spacecraft-hover 60s linear infinite;
     transform-origin: center center;
   }
 
