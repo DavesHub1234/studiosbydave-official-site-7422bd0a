@@ -315,7 +315,7 @@
   }
 
   .animate-spacecraft-hover {
-    animation: spacecraft-hover 12s ease-in-out infinite;
+    animation: spacecraft-hover 60s linear infinite;
     transform-origin: center center;
   }
 
