@@ -21,7 +21,7 @@ import AIAutomations from "./pages/AIAutomations";
 import GoogleOptimization from "./pages/GoogleOptimization";
 import SEOPage from "./pages/SEO";
 import Promos from "./pages/Promos";
-import ProductPacks from "./pages/ProductPacks";
+
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
