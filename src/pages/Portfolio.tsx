@@ -14,7 +14,8 @@ import padgsteenguitarsImg from "@/assets/portfolio/padgsteenguitars.png";
 import shadesColorCraftImg from "@/assets/portfolio/shades-color-craft.png";
 import leeBuildsShelbyImg from "@/assets/portfolio/lee-builds-shelby.png";
 import odysseyHomeVisionsImg from "@/assets/portfolio/odyssey-home-visions.png";
-import moleDetectiveImg from "@/assets/portfolio/mole-detective.png";
+import moleDetectiveImg from "@/assets/portfolio/mole-detective.png"; // kept for future use
+import leadParrotConferenceImg from "@/assets/portfolio/lead-parrot-conference.png";
 import melodyLockImg from "@/assets/portfolio/melody-lock.png";
 import rifeWaveImg from "@/assets/portfolio/rife-wave.png";
 import waveSpyImg from "@/assets/portfolio/wave-spy.png";
@@ -68,9 +69,9 @@ const webProjects: PortfolioProject[] = [
 
 const appProjects: PortfolioProject[] = [
   {
-    title: "Mole Locator",
-    description: "Subterranean detection system using seismic frequency analysis with real-time scanning capabilities.",
-    images: [moleDetectiveImg],
+    title: "Lead-Parrot",
+    description: "AI-powered lead generation platform delivering verified, targeted leads in seconds with intelligent outreach templates.",
+    images: [leadParrotConferenceImg],
     category: "webapp",
   },
   {
