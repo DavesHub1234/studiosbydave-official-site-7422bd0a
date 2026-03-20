@@ -14,7 +14,8 @@ import padgsteenguitarsImg from "@/assets/portfolio/padgsteenguitars.png";
 import shadesColorCraftImg from "@/assets/portfolio/shades-color-craft.png";
 import leeBuildsShelbyImg from "@/assets/portfolio/lee-builds-shelby.png";
 import odysseyHomeVisionsImg from "@/assets/portfolio/odyssey-home-visions.png";
-import moleDetectiveImg from "@/assets/portfolio/mole-detective.png";
+import moleDetectiveImg from "@/assets/portfolio/mole-detective.png"; // kept for future use
+import leadParrotConferenceImg from "@/assets/portfolio/lead-parrot-conference.png";
 import melodyLockImg from "@/assets/portfolio/melody-lock.png";
 import rifeWaveImg from "@/assets/portfolio/rife-wave.png";
 import waveSpyImg from "@/assets/portfolio/wave-spy.png";
