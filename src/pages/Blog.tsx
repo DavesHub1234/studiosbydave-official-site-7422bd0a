@@ -6,6 +6,15 @@ import { ArrowRight } from "lucide-react";
 
 const blogArticles = [
   {
+    id: 5,
+    slug: "fs-expedited-llc-spotlight",
+    title: "Driving Efficiency Forward: Spotlight on F&S Expedited LLC",
+    subtitle: "Reliable, Fast, and Customer-Focused Logistics from Shelby, NC",
+    date: "March 2026",
+    volume: "Vol. 1, No. 5",
+    excerpt: "In today's fast-paced logistics landscape, businesses need more than just transportation—they need reliability, speed, and a partner they can trust. Meet F&S Expedited LLC, a Shelby-based interstate freight carrier committed to delivering efficient, dependable solutions.",
+  },
+  {
     id: 4,
     slug: "local-seo-essentials-2026",
     title: "Local SEO Essentials for Shelby Businesses in 2026: Don't Get Left Behind in AI Search",
