@@ -70,7 +70,7 @@ const Blog = () => {
             <p className="text-xs tracking-[0.3em] uppercase text-neutral-500 font-serif mb-2">
               Est. 2024
             </p>
-            <h1 className="text-5xl md:text-7xl font-bold text-neutral-900 font-serif tracking-tight border-4 border-[hsl(218_49%_22%)] rounded-lg px-6 py-3 inline-block shadow-[0_0_15px_hsl(259_84%_30%/0.15)]">
+            <h1 className="text-5xl md:text-7xl font-bold text-neutral-900 font-serif tracking-tight border-4 border-[hsl(218_49%_22%)] rounded-lg px-6 py-3 inline-block shadow-[0_0_15px_hsl(259_84%_30%/0.15)] italic [font-style:oblique_4deg]">
               The Studio's Chronicle
             </h1>
             <p className="text-lg text-neutral-600 font-serif italic mt-4">
