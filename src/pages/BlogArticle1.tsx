@@ -99,7 +99,7 @@ const BlogArticle1 = () => {
                   >
                     Why Choose Studios by Dave<br className="hidden md:block" /> Over the Local Competition?
                   </h1>
-                  <p className="text-sm md:text-lg text-stone-700 font-serif italic max-w-2xl mx-auto">
+                  <p className="text-sm md:text-lg text-stone-700 font-serif max-w-2xl mx-auto [font-style:oblique_4deg]">
                     A Local Partner for Professional Web Design, Branding, and SEO in Shelby, NC
                   </p>
                 </div>

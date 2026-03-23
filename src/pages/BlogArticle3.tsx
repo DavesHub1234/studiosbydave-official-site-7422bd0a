@@ -99,7 +99,7 @@ const BlogArticle3 = () => {
                   >
                     5 Common Website Mistakes<br className="hidden md:block" /> Costing Local Businesses Customers
                   </h1>
-                  <p className="text-sm md:text-lg text-stone-700 font-serif italic max-w-2xl mx-auto">
+                  <p className="text-sm md:text-lg text-stone-700 font-serif max-w-2xl mx-auto [font-style:oblique_4deg]">
                     And How to Fix Them Before It's Too Late
                   </p>
                 </div>
