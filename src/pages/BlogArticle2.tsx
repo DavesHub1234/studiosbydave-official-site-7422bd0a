@@ -99,7 +99,7 @@ const BlogArticle2 = () => {
                   >
                     Does Your Business Really Need<br className="hidden md:block" /> a Website in 2026?
                   </h1>
-                  <p className="text-sm md:text-lg text-stone-700 font-serif italic max-w-2xl mx-auto">
+                  <p className="text-sm md:text-lg text-stone-700 font-serif max-w-2xl mx-auto [font-style:oblique_4deg]">
                     And What Happens If You Don't
                   </p>
                 </div>

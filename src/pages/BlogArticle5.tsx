@@ -89,7 +89,7 @@ const BlogArticle5 = () => {
                   >
                     Driving Efficiency Forward:<br className="hidden md:block" /> Spotlight on F&S Expedited LLC
                   </h1>
-                  <p className="text-sm md:text-lg text-stone-700 font-serif italic max-w-3xl mx-auto">
+                  <p className="text-sm md:text-lg text-stone-700 font-serif max-w-3xl mx-auto [font-style:oblique_4deg]">
                     Reliable, Fast, and Customer-Focused Logistics from Shelby, NC
                   </p>
                 </div>

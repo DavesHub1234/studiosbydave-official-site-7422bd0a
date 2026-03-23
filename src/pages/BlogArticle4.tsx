@@ -99,7 +99,7 @@ const BlogArticle4 = () => {
                   >
                     Local SEO Essentials for Shelby Businesses in 2026:<br className="hidden md:block" /> Don't Get Left Behind in AI Search
                   </h1>
-                  <p className="text-sm md:text-lg text-stone-700 font-serif italic max-w-3xl mx-auto">
+                  <p className="text-sm md:text-lg text-stone-700 font-serif max-w-3xl mx-auto [font-style:oblique_4deg]">
                     Why Local SEO Is More Important Than Ever – And How to Get It Right
                   </p>
                 </div>
