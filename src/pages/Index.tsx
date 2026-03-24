@@ -25,6 +25,7 @@ const Index = () => {
       <PromotionMarquee />
       <main>
         <HeroSection />
+        <TrustedLogosMarquee />
         <ServicesSection />
         
         <NonExclusiveSection />
