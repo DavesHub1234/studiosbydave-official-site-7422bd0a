@@ -196,7 +196,7 @@ const WebDesign = () => {
                     "Lead capture forms",
                     "Photo gallery",
                     "3 rounds of revisions",
-                    "3-week delivery"
+                    "4-6 week delivery"
                   ].map((feature, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
