@@ -26,7 +26,7 @@ const TrustedLogosMarquee = () => {
   const doubled = [...logos, ...logos];
 
   return (
-    <section className="w-full py-8 overflow-hidden bg-muted/30">
+    <section className="w-full py-12 overflow-hidden bg-muted/30">
       <p className="text-center text-sm text-muted-foreground mb-6 font-semibold tracking-wide uppercase">
         Powered by the best in the industry
       </p>
@@ -35,7 +35,7 @@ const TrustedLogosMarquee = () => {
         <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
         <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
 
-        <div className="flex animate-marquee w-max items-center gap-16 px-8">
+        <div className="flex animate-marquee w-max items-center gap-10 px-8">
           {doubled.map((logo, i) => (
             <div
               key={i}
