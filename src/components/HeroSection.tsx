@@ -108,17 +108,6 @@ const HeroSection = () => {
               </Link>
             </div>
 
-            {/* Social Proof */}
-            <div className="pt-8 border-t border-white/20">
-              <p className="text-white/70 text-sm mb-4">Trusted by industry leaders:</p>
-              <div className="flex items-center flex-wrap gap-x-8 gap-y-2 text-white/60">
-                <span className="font-semibold">Local Roofing Co.</span>
-                <span className="font-semibold">Green Landscapes LLC</span>
-                <span className="font-semibold">Solar Solutions Pro</span>
-                <span className="font-semibold">Elite Tree Services</span>
-                <span className="font-semibold">​  </span>
-              </div>
-            </div>
           </div>
 
           {/* Right Column - Hero Image (Centered with maintained size) */}
