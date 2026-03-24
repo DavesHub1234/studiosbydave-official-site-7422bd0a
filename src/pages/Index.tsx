@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
+import TrustedLogosMarquee from "@/components/TrustedLogosMarquee";
 import ServicesSection from "@/components/ServicesSection";
 import NonExclusiveSection from "@/components/NonExclusiveSection";
 import PromotionMarquee from "@/components/PromotionMarquee";
