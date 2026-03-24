@@ -6,17 +6,19 @@ import hostinger from "@/assets/marquee-logos/hostinger.png";
 import openrouter from "@/assets/marquee-logos/openrouter.svg";
 import windsurf from "@/assets/marquee-logos/windsurf.svg";
 import leadParrot from "@/assets/marquee-logos/lead-parrot.png";
+import ollama from "@/assets/marquee-logos/ollama.png";
 import studiosByDave from "@/assets/marquee-logos/studios-by-dave.png";
 
 const logos = [
   { src: comptia, alt: "CompTIA A+" },
   { src: vscode, alt: "VS Code" },
-  { src: claude, alt: "Claude" },
   { src: opencode, alt: "OpenCode" },
   { src: hostinger, alt: "Hostinger" },
   { src: openrouter, alt: "OpenRouter" },
+  { src: claude, alt: "Claude" },
   { src: windsurf, alt: "Windsurf" },
   { src: leadParrot, alt: "Lead Parrot" },
+  { src: ollama, alt: "Ollama" },
   { src: studiosByDave, alt: "Studios by Dave" },
 ];
 
