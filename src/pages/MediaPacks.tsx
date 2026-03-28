@@ -100,7 +100,7 @@ const MediaPacks = () => {
               <Card className="relative border border-border/60 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-visible">
                 <FannedCards 
                   colors={["linear-gradient(135deg, #FF6B6B, #FF8E53)", "linear-gradient(135deg, #4ECDC4, #44B09E)", "linear-gradient(135deg, #A855F7, #6366F1)"]}
-                  labels={[null, "Your Business Brand", null]}
+                  labels={["Your Business Brand", "Your Business Brand", "Your Business Brand"]}
                 />
                 <CardHeader className="text-center pb-2 pt-8">
                   <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -133,7 +133,7 @@ const MediaPacks = () => {
               <Card className="relative border-2 border-primary shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col scale-[1.03] md:scale-105 overflow-visible">
                 <FannedCards
                   colors={["linear-gradient(135deg, #F59E0B, #EF4444)", "linear-gradient(135deg, #6366F1, #8B5CF6)", "linear-gradient(135deg, #EC4899, #F43F5E)", "linear-gradient(135deg, #10B981, #14B8A6)"]}
-                  labels={["Your Business Brand", null, null, "Your Business Brand"]}
+                  labels={[null, null, null, "Your Website Mockup"]}
                 />
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
                   <Badge className="bg-primary text-primary-foreground px-4 py-1.5 text-sm font-bold shadow-lg">
@@ -172,7 +172,7 @@ const MediaPacks = () => {
               <Card className="relative border border-border/60 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-visible">
                 <FannedCards
                   colors={["linear-gradient(135deg, #8B5CF6, #D946EF)", "linear-gradient(135deg, #F97316, #FBBF24)", "linear-gradient(135deg, #06B6D4, #3B82F6)", "linear-gradient(135deg, #EC4899, #A855F7)", "linear-gradient(135deg, #10B981, #6366F1)"]}
-                  labels={[null, "Your Business Brand", null, null, "Your Business Brand"]}
+                  labels={[null, null, null, null, "Your Custom App Prototype"]}
                 />
                 <CardHeader className="text-center pb-2 pt-8">
                   <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
