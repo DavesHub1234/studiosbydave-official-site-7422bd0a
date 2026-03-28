@@ -1,11 +1,12 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Globe, Palette, Bot, Search, Target, Users } from "lucide-react";
+import { ArrowRight, Globe, Palette, Bot, Search, Target, Users, Package } from "lucide-react";
 import { Link } from "react-router-dom";
 import webDesignBackdrop from "@/assets/web-design-backdrop.png";
 import brandingBackdrop from "@/assets/branding-backdrop.jpeg";
 import aiBackdrop from "@/assets/ai-backdrop.jpeg";
 import googleBackdrop from "@/assets/google-backdrop.jpeg";
+import mediaPacksBackdrop from "@/assets/media-packs-backdrop.jpg";
 const services = [{
   icon: Globe,
   title: "Web Design & Development",
