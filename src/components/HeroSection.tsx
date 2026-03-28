@@ -110,7 +110,7 @@ const HeroSection = () => {
             <div className="relative w-full lg:w-[110%] xl:w-[120%]">
               {/* Hero Image - Centered wider container */}
               <div className="aspect-square rounded-2xl overflow-hidden shadow-glow border border-white/20 relative">
-              <img src="/lovable-uploads/hero-human-inside.png" alt="Human Inside - futuristic UFO-shaped device with robotic arms holding website screens hovering over a sunlit meadow, representing Studios by Dave connecting humanity through technology" className="w-full h-full object-cover object-center animate-spacecraft-hover" fetchPriority="high" decoding="sync" loading="eager" width="1024" height="1024" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 60vw, 700px" />
+              <img src="/lovable-uploads/hero-human-inside.png" alt="Human Inside - futuristic UFO-shaped device with robotic arms holding website screens hovering over a sunlit meadow, representing Studios by Dave connecting humanity through technology" className="w-full h-full object-cover object-center" fetchPriority="high" decoding="sync" loading="eager" width="1024" height="1024" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 60vw, 700px" />
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-accent/10" />
                 
