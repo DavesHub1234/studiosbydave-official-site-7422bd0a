@@ -1,11 +1,12 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Globe, Palette, Bot, Search, Target, Users } from "lucide-react";
+import { ArrowRight, Globe, Palette, Bot, Search, Target, Users, Package } from "lucide-react";
 import { Link } from "react-router-dom";
 import webDesignBackdrop from "@/assets/web-design-backdrop.png";
 import brandingBackdrop from "@/assets/branding-backdrop.jpeg";
 import aiBackdrop from "@/assets/ai-backdrop.jpeg";
 import googleBackdrop from "@/assets/google-backdrop.jpeg";
+import mediaPacksBackdrop from "@/assets/media-packs-backdrop.jpg";
 const services = [{
   icon: Globe,
   title: "Web Design & Development",
@@ -33,6 +34,15 @@ const services = [{
   linkText: "Learn About Google Optimization",
   gradient: "from-primary to-accent",
   backdrop: googleBackdrop
+}, {
+  icon: Package,
+  title: "Custom Media Packs",
+  description: "Custom Digital Content — Ready to Use, Ready to Convert. Get high-quality, custom-made visuals, mockups, and digital assets tailored to your business.",
+  features: ["Custom Visuals & Graphics", "Website & Social Media Ready", "Fast Turnaround Delivery", "Conversion-Focused Design"],
+  link: "/studiosweb/media-packs",
+  linkText: "Learn About Media Packs",
+  gradient: "from-accent to-primary",
+  backdrop: mediaPacksBackdrop
 }];
 const ServicesSection = () => {
   return <section className="py-24 bg-gradient-subtle">
