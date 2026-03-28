@@ -10,6 +10,7 @@ import webDesignBackdrop from "@/assets/web-design-backdrop.png";
 import brandingBackdrop from "@/assets/branding-backdrop.jpeg";
 import aiBackdrop from "@/assets/ai-backdrop.jpeg";
 import googleBackdrop from "@/assets/google-backdrop.jpeg";
+import daveMascotHappier from "@/assets/dave-mascot-happier.png";
 
 const About = () => {
   const breadcrumbs = breadcrumbSchema([
