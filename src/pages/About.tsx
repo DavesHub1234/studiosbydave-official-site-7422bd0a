@@ -10,7 +10,7 @@ import webDesignBackdrop from "@/assets/web-design-backdrop.png";
 import brandingBackdrop from "@/assets/branding-backdrop.jpeg";
 import aiBackdrop from "@/assets/ai-backdrop.jpeg";
 import googleBackdrop from "@/assets/google-backdrop.jpeg";
-import daveMascotHappier from "@/assets/dave-mascot-happier.png";
+import daveMascotPlanting from "@/assets/dave-mascot-planting.png";
 
 const About = () => {
   const breadcrumbs = breadcrumbSchema([
@@ -247,8 +247,8 @@ const About = () => {
               </div>
               <div className="mt-8">
                 <img 
-                  src="/lovable-uploads/dave-landscaping.jpg"
-                  alt="Dave Richardson planting a tree, showcasing his passion for landscaping"
+                  src={daveMascotPlanting}
+                  alt="Dave and the Studios by Dave mascot planting a tree together"
                   className="w-full rounded-lg shadow-lg"
                   loading="lazy"
                   decoding="async"
