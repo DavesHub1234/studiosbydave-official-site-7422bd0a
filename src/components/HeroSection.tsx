@@ -3,7 +3,7 @@ import { ArrowRight, CheckCircle, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-image.jpg";
 import robotBg from "@/assets/robot-construction-bg.jpg";
-import mascotPointing from "@/assets/mascot-pointing.png";
+import mascotPointing from "@/assets/mascot-rocket.png";
 const HeroSection = () => {
   return <section className="relative min-h-screen bg-gradient-hero overflow-hidden">
       {/* Embossed Robot Background */}
