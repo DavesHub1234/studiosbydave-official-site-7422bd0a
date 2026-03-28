@@ -97,7 +97,11 @@ const MediaPacks = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
 
               {/* Starter Pack */}
-              <Card className="relative border border-border/60 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
+              <Card className="relative border border-border/60 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-visible">
+                <FannedCards 
+                  colors={["linear-gradient(135deg, #FF6B6B, #FF8E53)", "linear-gradient(135deg, #4ECDC4, #44B09E)", "linear-gradient(135deg, #A855F7, #6366F1)"]}
+                  labels={[null, "Your Business Brand", null]}
+                />
                 <CardHeader className="text-center pb-2 pt-8">
                   <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
                     <Image className="h-7 w-7 text-primary" />
@@ -126,7 +130,11 @@ const MediaPacks = () => {
               </Card>
 
               {/* Growth Pack — Highlighted */}
-              <Card className="relative border-2 border-primary shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col scale-[1.03] md:scale-105">
+              <Card className="relative border-2 border-primary shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col scale-[1.03] md:scale-105 overflow-visible">
+                <FannedCards
+                  colors={["linear-gradient(135deg, #F59E0B, #EF4444)", "linear-gradient(135deg, #6366F1, #8B5CF6)", "linear-gradient(135deg, #EC4899, #F43F5E)", "linear-gradient(135deg, #10B981, #14B8A6)"]}
+                  labels={["Your Business Brand", null, null, "Your Business Brand"]}
+                />
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
                   <Badge className="bg-primary text-primary-foreground px-4 py-1.5 text-sm font-bold shadow-lg">
                     <Star className="h-3.5 w-3.5 mr-1.5" />
@@ -161,7 +169,11 @@ const MediaPacks = () => {
               </Card>
 
               {/* Premium Pack */}
-              <Card className="relative border border-border/60 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
+              <Card className="relative border border-border/60 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-visible">
+                <FannedCards
+                  colors={["linear-gradient(135deg, #8B5CF6, #D946EF)", "linear-gradient(135deg, #F97316, #FBBF24)", "linear-gradient(135deg, #06B6D4, #3B82F6)", "linear-gradient(135deg, #EC4899, #A855F7)", "linear-gradient(135deg, #10B981, #6366F1)"]}
+                  labels={[null, "Your Business Brand", null, null, "Your Business Brand"]}
+                />
                 <CardHeader className="text-center pb-2 pt-8">
                   <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
                     <Crown className="h-7 w-7 text-primary" />
