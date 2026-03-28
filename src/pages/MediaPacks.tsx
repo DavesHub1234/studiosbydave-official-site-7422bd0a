@@ -8,6 +8,31 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
+const FannedCards = ({ colors, labels }: { colors: string[]; labels: (string | null)[] }) => (
+  <div className="absolute -top-3 -right-3 z-20 w-24 h-20 pointer-events-none">
+    {colors.map((color, i) => (
+      <div
+        key={i}
+        className="absolute w-14 h-20 rounded-lg shadow-lg border border-white/30 flex items-center justify-center"
+        style={{
+          background: color,
+          transform: `rotate(${(i - 1) * 15}deg) translateX(${i * 4}px)`,
+          transformOrigin: 'bottom center',
+          right: `${i * 2}px`,
+          top: `${i * 2}px`,
+          zIndex: 20 - i,
+        }}
+      >
+        {labels[i] && (
+          <span className="text-[6px] font-bold text-white text-center leading-tight px-1 drop-shadow-md">
+            {labels[i]}
+          </span>
+        )}
+      </div>
+    ))}
+  </div>
+);
+
 const MediaPacks = () => {
   const starterFeatures = [
     { icon: Image, text: "5 Custom Branded Images" },
