@@ -39,6 +39,10 @@ const Navigation = () => {
     path: "/studiosweb/promos",
     description: "Current promotions & offers"
   }, {
+    name: "Media Packs",
+    path: "/studiosweb/media-packs",
+    description: "Custom digital content packages"
+  }, {
     name: "Portfolio",
     path: "/studiosweb/portfolio",
     description: "View our work"
