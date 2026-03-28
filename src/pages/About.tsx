@@ -316,6 +316,24 @@ const About = () => {
         </div>
       </section>
 
+      {/* Friends of the Family Section */}
+      <section className="py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-foreground mb-4">Friends of the Family</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Some of our favorite spots around Shelby, NC — the local businesses and places we love stopping by and showing love to. 💛
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {/* Placeholder for uploaded images */}
+            <p className="col-span-full text-center text-muted-foreground italic">
+              Images coming soon...
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us Section */}
       <section className="py-24 bg-gradient-subtle">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
