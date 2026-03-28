@@ -60,6 +60,10 @@ const Navigation = () => {
             <Link to="/" className={`text-sm font-medium transition-colors hover:text-primary ${isActive('/') ? "text-primary border-b-2 border-primary pb-1" : "text-foreground/80"}`}>
               Home
             </Link>
+
+            <Link to="/about" className={`text-sm font-medium transition-colors hover:text-primary ${isActive('/about') ? "text-primary border-b-2 border-primary pb-1" : "text-foreground/80"}`}>
+              About Us
+            </Link>
             
             {/* StudiosWeb Collapsible */}
             <div className="relative">
@@ -106,10 +110,6 @@ const Navigation = () => {
               </span>
             </Link>
 
-            <Link to="/about" className={`text-sm font-medium transition-colors hover:text-primary ${isActive('/about') ? "text-primary border-b-2 border-primary pb-1" : "text-foreground/80"}`}>
-              About Us
-            </Link>
-
             <Link to="/contact" className={`text-sm font-medium transition-colors hover:text-primary ${isActive('/contact') ? "text-primary border-b-2 border-primary pb-1" : "text-foreground/80"}`}>
               Contact
             </Link>
@@ -133,6 +133,10 @@ const Navigation = () => {
         {isOpen && <div className="lg:hidden pb-6 space-y-4">
             <Link to="/" onClick={() => setIsOpen(false)} className={`block text-base font-medium transition-colors hover:text-primary ${isActive('/') ? "text-primary" : "text-foreground/80"}`}>
               Home
+            </Link>
+
+            <Link to="/about" onClick={() => setIsOpen(false)} className={`block text-base font-medium transition-colors hover:text-primary ${isActive('/about') ? "text-primary" : "text-foreground/80"}`}>
+              About Us
             </Link>
             
             {/* Mobile StudiosWeb Section */}
@@ -174,10 +178,6 @@ const Navigation = () => {
                 </span>
               </Link>
             </div>
-
-            <Link to="/about" onClick={() => setIsOpen(false)} className={`block text-base font-medium transition-colors hover:text-primary ${isActive('/about') ? "text-primary" : "text-foreground/80"}`}>
-              About Us
-            </Link>
 
             <Link to="/contact" onClick={() => setIsOpen(false)} className={`block text-base font-medium transition-colors hover:text-primary ${isActive('/contact') ? "text-primary" : "text-foreground/80"}`}>
               Contact
