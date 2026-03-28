@@ -82,7 +82,7 @@ const HeroSection = () => {
 
             {/* Key Benefits */}
             <div className="space-y-4">
-              {["Custom websites that convert visitors into customers", "SEO optimization to dominate local search results", "AI automations that streamline your business operations"].map((benefit, index) => <div key={index} className="flex items-center space-x-3 text-white/90">
+              {["Custom websites that convert visitors into customers", "SEO optimization to dominate local search results", "Quality custom digital assets tailored to your business"].map((benefit, index) => <div key={index} className="flex items-center space-x-3 text-white/90">
                   <CheckCircle size={20} className="text-accent flex-shrink-0" />
                   <span className="font-medium">{benefit}</span>
                 </div>)}
