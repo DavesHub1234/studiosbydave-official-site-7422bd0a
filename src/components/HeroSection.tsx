@@ -75,14 +75,9 @@ const HeroSection = () => {
                   We Don't Just Build Your <span className="cobalt-glow-text text-sidebar-ring">Website</span> or <span className="cobalt-glow-text">App</span>.
                 </h1>
                 <p className="leading-tight lg:text-2xl font-medium mt-3 text-[#dfe2f6] text-xl">
-                  We build the online engine that gets your business found, trusted, and hired by local customers.
+                  We build the online engine that gets your business found, trusted, and hired by local customers. At Studios by Dave we want to see YOU succeed!
                 </p>
               </div>
-              
-              <p className="text-xl text-white/90 max-w-2xl leading-relaxed">
-                <span className="font-bold block mb-2 text-muted-foreground">​  </span>
-                Specialized web development and digital marketing for YOUR local business. At Studios by Dave we want to see YOU succeed!
-              </p>
             </div>
 
             {/* Key Benefits */}
