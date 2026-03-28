@@ -197,8 +197,8 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
               <img 
-                src="/lovable-uploads/3c4b682e-a53b-465e-811c-b2b12172b4fc.png" 
-                alt="Studios by Dave philosophy - focused on maximizing client revenue through strategic web design and digital marketing solutions"
+                src={daveMascotHappier} 
+                alt="Dave and the Studios by Dave mascot asking how to make clients happier today"
                 className="w-full max-w-lg mx-auto rounded-2xl shadow-lg"
                 loading="lazy"
                 decoding="async"
