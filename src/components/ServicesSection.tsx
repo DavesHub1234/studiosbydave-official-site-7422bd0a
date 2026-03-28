@@ -34,6 +34,15 @@ const services = [{
   linkText: "Learn About Google Optimization",
   gradient: "from-primary to-accent",
   backdrop: googleBackdrop
+}, {
+  icon: Package,
+  title: "Custom Media Packs",
+  description: "Custom Digital Content — Ready to Use, Ready to Convert. Get high-quality, custom-made visuals, mockups, and digital assets tailored to your business.",
+  features: ["Custom Visuals & Graphics", "Website & Social Media Ready", "Fast Turnaround Delivery", "Conversion-Focused Design"],
+  link: "/studiosweb/media-packs",
+  linkText: "Learn About Media Packs",
+  gradient: "from-accent to-primary",
+  backdrop: mediaPacksBackdrop
 }];
 const ServicesSection = () => {
   return <section className="py-24 bg-gradient-subtle">
