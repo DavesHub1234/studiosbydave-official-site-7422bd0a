@@ -259,19 +259,6 @@ const About = () => {
                 </p>
               </div>
 
-              {/* Friends of the Family Section */}
-              <div className="mt-16">
-                <h3 className="text-3xl font-bold text-foreground mb-4 text-center">Friends of the Family</h3>
-                <p className="text-lg text-muted-foreground text-center mb-8 max-w-2xl mx-auto">
-                  Some of our favorite spots around Shelby, NC — the local businesses and places we love stopping by and showing love to. 💛
-                </p>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                  {/* Placeholder for uploaded images */}
-                  <p className="col-span-full text-center text-muted-foreground italic">
-                    Images coming soon...
-                  </p>
-                </div>
-              </div>
             </div>
             <div className="bg-gradient-primary rounded-2xl p-8 text-center">
               <h3 className="text-2xl font-bold text-white mb-4">Ready to Build Something GREAT?</h3>
