@@ -3,8 +3,24 @@ import Footer from "@/components/Footer";
 import SimpleSEO from "@/components/SimpleSEO";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import { breadcrumbSchema, articleSchema } from "@/data/structuredData";
 
 const BlogArticle1 = () => {
+  const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "https://www.studiosbydave.com" },
+    { name: "Blog", url: "https://www.studiosbydave.com/blog" },
+    { name: "Why Choose Studios by Dave", url: "https://www.studiosbydave.com/blog/why-choose-studios-by-dave" }
+  ]);
+
+  const articleStructuredData = articleSchema(
+    "Why Choose Studios by Dave Over the Local Competition?",
+    "A Local Partner for Professional Web Design, Branding, and SEO in Shelby, NC. Learn what makes Studios by Dave different from other local options.",
+    "https://www.studiosbydave.com/blog/why-choose-studios-by-dave",
+    "2025-01-15",
+    "2025-01-15",
+    "Studios by Dave"
+  );
+
   return (
     <div className="min-h-screen bg-stone-200">
       <SimpleSEO
@@ -12,6 +28,7 @@ const BlogArticle1 = () => {
         description="A Local Partner for Professional Web Design, Branding, and SEO in Shelby, NC. Learn what makes Studios by Dave different from other local options."
         keywords="Shelby NC web design, local web designer, branding Shelby NC, SEO Cleveland County, Studios by Dave"
         canonical="https://www.studiosbydave.com/blog/why-choose-studios-by-dave"
+        structuredData={[breadcrumbs, articleStructuredData]}
       />
       <Navigation />
       

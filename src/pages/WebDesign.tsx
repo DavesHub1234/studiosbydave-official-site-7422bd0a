@@ -7,7 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { CheckCircle, ArrowRight, Globe, Smartphone, Zap, Search } from "lucide-react";
 import { Link } from "react-router-dom";
 import SimpleSEO from "@/components/SimpleSEO";
-import { breadcrumbSchema } from "@/data/structuredData";
+import { breadcrumbSchema, serviceSchema, localServiceSchema } from "@/data/structuredData";
 
 const WebDesign = () => {
   const breadcrumbs = breadcrumbSchema([
@@ -15,25 +15,17 @@ const WebDesign = () => {
     { name: "Web Design", url: "https://www.studiosbydave.com/studiosweb/webdesign" }
   ]);
 
-  const webDesignSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Professional Web Design for Contractors",
-    "description": "Custom responsive websites designed specifically for roofing contractors, landscaping companies, and solar panel installers.",
-    "provider": {
-      "@type": "Organization", 
-      "name": "Studios by Dave"
-    },
-    "areaServed": {
-      "@type": "Country", 
-      "name": "United States"
-    },
-    "serviceType": "Web Design and Development",
-    "offers": {
-      "@type": "Offer",
-      "description": "Professional web design services including mobile-first design, SEO optimization, and lead generation systems."
-    }
-  };
+  const webDesignSchema = serviceSchema(
+    "Professional Web Design for Contractors",
+    "Custom responsive websites designed specifically for roofing contractors, landscaping companies, and solar panel installers with mobile-first design and SEO optimization.",
+    "https://www.studiosbydave.com/studiosweb/webdesign"
+  );
+
+  const localWebDesignSchema = localServiceSchema(
+    "Web Design Services",
+    "Local web design services in Shelby, NC. We create custom websites for contractors including roofing, landscaping, and solar installation companies.",
+    "https://www.studiosbydave.com/studiosweb/webdesign"
+  );
 
   return (
     <div className="min-h-screen">
@@ -41,7 +33,7 @@ const WebDesign = () => {
         title="Professional Web Design for Contractors - Mobile-Responsive Websites"
         description="Custom web design for roofing contractors, landscaping companies, and solar installers. Mobile-first responsive websites that convert visitors into customers. Get your free quote today."
         keywords="contractor web design, roofing contractor websites, landscaping web design, solar installer websites, mobile responsive design, lead generation websites, professional web development"
-        structuredData={[breadcrumbs, webDesignSchema]}
+        structuredData={[breadcrumbs, webDesignSchema, localWebDesignSchema]}
       />
       <Navigation />
       

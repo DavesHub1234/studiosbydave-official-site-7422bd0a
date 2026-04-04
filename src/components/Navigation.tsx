@@ -27,6 +27,10 @@ const Navigation = () => {
     path: "/studiosweb/branding",
     description: "Complete brand identity solutions"
   }, {
+    name: "AI Automations",
+    path: "/studiosweb/ai-automations",
+    description: "Cutting-edge AI solutions for your business"
+  }, {
     name: "SEO Services",
     path: "/studiosweb/seo",
     description: "Get found by your ideal customers"
@@ -42,6 +46,10 @@ const Navigation = () => {
     name: "Media Packs",
     path: "/studiosweb/media-packs",
     description: "Custom digital content packages"
+  }, {
+    name: "Product Packs",
+    path: "/studiosweb/product-packs",
+    description: "Digital product bundles and packages"
   }, {
     name: "Portfolio",
     path: "/studiosweb/portfolio",

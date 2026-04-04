@@ -237,3 +237,141 @@ export const breadcrumbSchema = (items: Array<{name: string, url: string}>) => (
     "item": item.url
   }))
 });
+
+export const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Studios by Dave",
+  "alternateName": "StudiosbyDave",
+  "url": "https://www.studiosbydave.com",
+  "description": "Professional web design, SEO, AI automations, and digital marketing for contractors and local businesses.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.studiosbydave.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Studios by Dave",
+    "url": "https://www.studiosbydave.com"
+  }
+};
+
+export const articleSchema = (title: string, description: string, url: string, datePublished: string, dateModified?: string, author?: string) => ({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "url": url,
+  "datePublished": datePublished,
+  "dateModified": dateModified || datePublished,
+  "author": {
+    "@type": "Person",
+    "name": author || "Studios by Dave",
+    "url": "https://www.studiosbydave.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Studios by Dave",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.studiosbydave.com/new-logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": url
+  }
+});
+
+export const serviceSchema = (serviceName: string, description: string, url: string) => ({
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": serviceName,
+  "description": description,
+  "url": url,
+  "provider": {
+    "@type": "Organization",
+    "name": "Studios by Dave",
+    "url": "https://www.studiosbydave.com"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "serviceType": "Professional Services"
+});
+
+export const localServiceSchema = (serviceName: string, description: string, url: string) => ({
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Studios by Dave",
+  "description": description,
+  "url": url,
+  "telephone": "+1-704-473-8188",
+  "email": "dx1creations25@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "125 S. Toney Street",
+    "addressLocality": "Shelby",
+    "addressRegion": "NC",
+    "postalCode": "28150",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "35.2901",
+    "longitude": "-81.5357"
+  },
+  "openingHours": "Mo-Fr 09:00-17:00",
+  "priceRange": "$$",
+  "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
+  "languagesSpoken": ["English"]
+});
+
+export const productSchema = (productName: string, description: string, url: string, price?: string) => ({
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": productName,
+  "description": description,
+  "url": url,
+  "brand": {
+    "@type": "Brand",
+    "name": "Studios by Dave"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Studios by Dave"
+  },
+  "offers": price ? {
+    "@type": "Offer",
+    "price": price,
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "seller": {
+      "@type": "Organization",
+      "name": "Studios by Dave"
+    }
+  } : undefined
+});
+
+export const reviewSchema = (reviewText: string, rating: number, author: string, date: string) => ({
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "reviewBody": reviewText,
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": rating.toString(),
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "author": {
+    "@type": "Person",
+    "name": author
+  },
+  "datePublished": date,
+  "itemReviewed": {
+    "@type": "Organization",
+    "name": "Studios by Dave"
+  }
+});

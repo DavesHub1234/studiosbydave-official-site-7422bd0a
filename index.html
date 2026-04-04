@@ -18,8 +18,18 @@
     <!-- Resource Hints for Performance -->
     <link rel="dns-prefetch" href="https://studiosbydave-final.lovable.app">
     <link rel="dns-prefetch" href="https://omnisnippet1.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="modulepreload" href="/src/main.tsx">
+    
+    <!-- Critical Image Preloading -->
     <link rel="preload" as="image" href="/lovable-uploads/hero-human-inside.png" fetchpriority="high">
+    <link rel="preload" as="image" href="/new-logo.png" fetchpriority="high">
+    
+    <!-- Font Loading Optimization -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fredoka+One&display=swap">
 
     <!-- Google Analytics (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7PYLQDFZ6M"></script>
@@ -30,12 +40,21 @@
       gtag('config', 'G-7PYLQDFZ6M');
     </script>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+    <!-- Google Fonts with font-display: swap -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fredoka+One&display=swap" rel="stylesheet">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fredoka+One&display=swap" rel="stylesheet"></noscript>
+    
+    <!-- Critical CSS Inlining for Performance -->
+    <style>
+      /* Critical above-the-fold styles */
+      body { margin: 0; font-family: 'Inter', sans-serif; }
+      .loading { opacity: 0; transition: opacity 0.3s; }
+      .loaded { opacity: 1; }
+      /* Prevent layout shifts */
+      img { max-width: 100%; height: auto; }
+      /* Font display optimization */
+      body { font-display: swap; }
+    </style>
 
     <!-- Open Graph -->
     

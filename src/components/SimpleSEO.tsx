@@ -33,7 +33,7 @@ const SimpleSEO = ({
       let tag = document.querySelector(`meta[name="${name}"]`) || document.querySelector(`meta[property="${name}"]`);
       if (!tag) {
         tag = document.createElement('meta');
-        tag.setAttribute(name.startsWith('og:') ? 'property' : 'name', name);
+        tag.setAttribute(name.startsWith('og:') || name.startsWith('twitter:') ? 'property' : 'name', name);
         document.head.appendChild(tag);
       }
       tag.setAttribute('content', content);
@@ -53,9 +53,7 @@ const SimpleSEO = ({
     canonicalLink.href = url;
 
     // Robots
-    if (noindex) {
-      updateMetaTag('robots', 'noindex, nofollow');
-    }
+    updateMetaTag('robots', noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
 
     // Open Graph
     updateMetaTag('og:title', fullTitle);
@@ -72,6 +70,7 @@ const SimpleSEO = ({
     updateMetaTag('twitter:description', description);
     updateMetaTag('twitter:image', ogImage);
     updateMetaTag('twitter:site', '@studiosbydave');
+    updateMetaTag('twitter:creator', '@studiosbydave');
 
     // Additional SEO Meta Tags
     updateMetaTag('author', 'Studios by Dave');
@@ -85,15 +84,25 @@ const SimpleSEO = ({
     updateMetaTag('geo.position', '35.2901;-81.5357');
     updateMetaTag('ICBM', '35.2901, -81.5357');
 
-    // Structured Data
+    // Structured Data - Handle multiple schemas
+    const removeExistingStructuredData = () => {
+      const existingScripts = document.querySelectorAll('script[type="application/ld+json"]');
+      existingScripts.forEach(script => script.remove());
+    };
+
     if (structuredData) {
-      let scriptTag = document.querySelector('script[type="application/ld+json"]') as HTMLScriptElement | null;
-      if (!scriptTag) {
-        scriptTag = document.createElement('script');
+      removeExistingStructuredData();
+      
+      // Handle array of schemas or single schema
+      const schemas = Array.isArray(structuredData) ? structuredData : [structuredData];
+      
+      schemas.forEach((schema, index) => {
+        const scriptTag = document.createElement('script');
         scriptTag.type = 'application/ld+json';
+        scriptTag.id = `structured-data-${index}`;
+        scriptTag.textContent = JSON.stringify(schema);
         document.head.appendChild(scriptTag);
-      }
-      scriptTag.textContent = JSON.stringify(structuredData);
+      });
     }
 
     // Cleanup function

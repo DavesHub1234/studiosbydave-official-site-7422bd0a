@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import SimpleSEO from "@/components/SimpleSEO";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import { breadcrumbSchema } from "@/data/structuredData";
 
 const blogArticles = [
   {
@@ -53,13 +54,19 @@ const blogArticles = [
 ];
 
 const Blog = () => {
+  const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "https://www.studiosbydave.com" },
+    { name: "Blog", url: "https://www.studiosbydave.com/blog" }
+  ]);
+
   return (
     <div className="min-h-screen bg-[#f5f5f0]">
       <SimpleSEO
-        title="Blog | Studios by Dave"
+        title="The Studio's Chronicle | Digital Marketing Blog for Contractors"
         description="Expert insights, tips, and industry news from Studios by Dave. Web design, branding, SEO, and digital marketing content for contractors and local businesses in Shelby, NC."
-        keywords="contractor blog, web design tips, SEO insights, digital marketing news, branding advice, Shelby NC"
+        keywords="contractor blog, web design tips, SEO insights, digital marketing news, branding advice, Shelby NC, contractor marketing, local business blog"
         canonical="https://www.studiosbydave.com/blog"
+        structuredData={[breadcrumbs]}
       />
       <Navigation />
       
