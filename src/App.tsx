@@ -7,7 +7,7 @@ import Index from "./pages/Index";
 import StudiosWeb from "./pages/StudiosWeb";
 import StudiosInk from "./pages/StudiosInk";
 import StudiosGear from "./pages/StudiosGear";
-import LeadParrot from "./pages/LeadParrot";
+
 import SacredArsenal from "./pages/SacredArsenal";
 import Blog from "./pages/Blog";
 import BlogArticle1 from "./pages/BlogArticle1";
