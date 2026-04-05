@@ -18,7 +18,7 @@ import BlogArticle5 from "./pages/BlogArticle5";
 
 import WebDesign from "./pages/WebDesign";
 import Branding from "./pages/Branding";
-import AIAutomations from "./pages/AIAutomations";
+
 import GoogleOptimization from "./pages/GoogleOptimization";
 import SEOPage from "./pages/SEO";
 import Promos from "./pages/Promos";
