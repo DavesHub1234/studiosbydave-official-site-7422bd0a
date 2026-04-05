@@ -47,10 +47,6 @@ const Navigation = () => {
     path: "/studiosweb/media-packs",
     description: "Custom digital content packages"
   }, {
-    name: "Product Packs",
-    path: "/studiosweb/product-packs",
-    description: "Digital product bundles and packages"
-  }, {
     name: "Portfolio",
     path: "/studiosweb/portfolio",
     description: "View our work"
