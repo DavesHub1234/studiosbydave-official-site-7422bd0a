@@ -93,19 +93,10 @@ const Navigation = () => {
               Studios Ink
             </Link>
 
-            {/* StudiosGear with sub-link */}
-            <div className="relative group">
-              <Link to="/studiosgear" className={`text-sm font-bold transition-colors hover:text-primary ${location.pathname.startsWith('/studiosgear') ? "text-primary border-b-2 border-primary pb-1" : "text-primary"}`}>
-                Studios Gear
-              </Link>
-              <div className="absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg border border-border/50 z-50 overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <div className="p-2">
-                  <Link to="/studiosgear/lead-parrot" className="text-sm whitespace-nowrap px-4 py-2 rounded-md transition-all hover:bg-muted hover:text-primary font-medium text-foreground/80 block">
-                    Lead-Parrot
-                  </Link>
-                </div>
-              </div>
-            </div>
+            {/* StudiosGear */}
+            <Link to="/studiosgear" className={`text-sm font-bold transition-colors hover:text-primary ${location.pathname.startsWith('/studiosgear') ? "text-primary border-b-2 border-primary pb-1" : "text-primary"}`}>
+              Studios Gear
+            </Link>
 
             {/* Blog */}
             <Link to="/blog" className={`font-poofy text-base transition-all hover:scale-105 ${isActive('/blog') ? "border-b-2 border-primary pb-1" : ""}`}>
