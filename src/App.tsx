@@ -23,7 +23,7 @@ import GoogleOptimization from "./pages/GoogleOptimization";
 import SEOPage from "./pages/SEO";
 import Promos from "./pages/Promos";
 import MediaPacks from "./pages/MediaPacks";
-import ProductPacks from "./pages/ProductPacks";
+
 
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
@@ -55,7 +55,7 @@ const App = () => (
           <Route path="/studiosweb/seo" element={<SEOPage />} />
           <Route path="/studiosweb/promos" element={<Promos />} />
           <Route path="/studiosweb/media-packs" element={<MediaPacks />} />
-          <Route path="/studiosweb/product-packs" element={<ProductPacks />} />
+          
 
           <Route path="/studiosweb/portfolio" element={<Portfolio />} />
           <Route path="/studiosink" element={<StudiosInk />} />
