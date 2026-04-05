@@ -61,7 +61,7 @@ const App = () => (
           <Route path="/studiosink" element={<StudiosInk />} />
           <Route path="/studiosink/sacred-arsenal" element={<SacredArsenal />} />
           <Route path="/studiosgear" element={<StudiosGear />} />
-          <Route path="/studiosgear/lead-parrot" element={<LeadParrot />} />
+          
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/why-choose-studios-by-dave" element={<BlogArticle1 />} />
           <Route path="/blog/does-your-business-need-a-website-2026" element={<BlogArticle2 />} />

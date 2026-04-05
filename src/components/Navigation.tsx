@@ -158,11 +158,6 @@ const Navigation = () => {
               <Link to="/studiosgear" onClick={() => setIsOpen(false)} className={`block text-base font-bold transition-colors hover:text-primary ${location.pathname.startsWith('/studiosgear') ? "text-primary" : "text-primary"}`}>
                 Studios Gear
               </Link>
-              <div className="ml-4 mt-2">
-                <Link to="/studiosgear/lead-parrot" onClick={() => setIsOpen(false)} className={`block text-sm hover:text-primary transition-colors text-muted-foreground ${isActive('/studiosgear/lead-parrot') ? "text-primary" : ""}`}>
-                  Lead-Parrot
-                </Link>
-              </div>
             </div>
 
             {/* Mobile Blog */}
