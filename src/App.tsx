@@ -36,6 +36,7 @@ import Watermark from "./components/Watermark";
 import ElfsightChatbot from "./components/ElfsightChatbot";
 import ElfsightPopup from "./components/ElfsightPopup";
 
+
 const queryClient = new QueryClient();
 
 const App = () => (
