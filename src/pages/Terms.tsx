@@ -8,7 +8,6 @@ const Terms = () => {
       <SimpleSEO
         title="Terms of Service - Studios by Dave"
         description="Terms of Service for Studios by Dave. Review our terms and conditions for web design, SEO, AI automation, and digital marketing services."
-        noindex={true}
       />
       <Navigation />
       <main className="min-h-screen">

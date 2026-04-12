@@ -8,7 +8,6 @@ const Privacy = () => {
       <SimpleSEO
         title="Privacy Policy - Studios by Dave"
         description="Privacy Policy for Studios by Dave. Learn how we collect, use, and protect your personal information when you use our web design and digital marketing services."
-        noindex={true}
       />
       <Navigation />
       <main className="min-h-screen">
