@@ -21,6 +21,7 @@ const Index = () => {
         keywords="web design contractors, roofing contractor websites, landscaping web design, solar panel installer marketing, SEO for contractors, AI automation business, North Carolina web design"
         structuredData={structuredData}
       />
+      <h1 className="sr-only">Studios by Dave - Web Design and Digital Marketing Services in Shelby, NC</h1>
       <Navigation />
       <PromotionMarquee />
       <main>
