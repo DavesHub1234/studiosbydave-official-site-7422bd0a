@@ -101,7 +101,7 @@ const BlogArticle5 = () => {
                 <div className="md:col-span-8 border-r-0 md:border-r border-stone-300 md:pr-6">
                   {/* Drop Cap Lead */}
                   <p 
-                    className="text-sm md:text-base leading-relaxed text-stone-800 mb-4 text-justify"
+                    className="text-base md:text-lg leading-relaxed text-stone-800 mb-4 text-justify italic"
                     style={{ fontFamily: "'Times New Roman', Times, serif" }}
                   >
                     <span className="float-left text-6xl md:text-7xl font-bold leading-none mr-2 mt-1 text-stone-900" style={{ fontFamily: "Georgia, serif" }}>I</span>
@@ -137,14 +137,14 @@ const BlogArticle5 = () => {
                   </div>
 
                   <p 
-                    className="text-sm md:text-base leading-relaxed text-stone-800 mb-4 text-justify"
+                    className="text-base md:text-lg leading-relaxed text-stone-800 mb-4 text-justify italic"
                     style={{ fontFamily: "'Times New Roman', Times, serif" }}
                   >
                     F&S Expedited LLC offers a range of logistics and transportation services designed to meet modern business demands. Their solutions are tailored to ensure flexibility, speed, and reliability.
                   </p>
 
                   {/* Services Grid */}
-                  <div className="md:columns-2 md:gap-6 text-sm leading-relaxed text-stone-800" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+                  <div className="md:columns-2 md:gap-6 text-base md:text-lg leading-relaxed text-stone-800 italic" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
                     <div className="break-inside-avoid mb-4">
                       <h4 className="font-black text-base text-stone-900 border-b border-stone-400 pb-1 mb-2 uppercase tracking-wide">
                         🚛 Expedited Freight Services
@@ -190,7 +190,7 @@ const BlogArticle5 = () => {
                   </div>
 
                   <p 
-                    className="text-sm md:text-base leading-relaxed text-stone-800 mb-4 text-justify"
+                    className="text-base md:text-lg leading-relaxed text-stone-800 mb-4 text-justify italic"
                     style={{ fontFamily: "'Times New Roman', Times, serif" }}
                   >
                     What sets F&S Expedited LLC apart is their dedication to service quality and operational reliability. Their approach is built around:
@@ -211,7 +211,7 @@ const BlogArticle5 = () => {
                   </div>
 
                   <p 
-                    className="text-sm md:text-base leading-relaxed text-stone-800 mb-4 text-justify"
+                    className="text-base md:text-lg leading-relaxed text-stone-800 mb-4 text-justify italic"
                     style={{ fontFamily: "'Times New Roman', Times, serif" }}
                   >
                     In an industry where trust is everything, F&S Expedited LLC continues to build strong relationships by delivering results.
@@ -225,14 +225,14 @@ const BlogArticle5 = () => {
                   </div>
 
                   <p 
-                    className="text-sm md:text-base leading-relaxed text-stone-800 mb-4 text-justify"
+                    className="text-base md:text-lg leading-relaxed text-stone-800 mb-4 text-justify italic"
                     style={{ fontFamily: "'Times New Roman', Times, serif" }}
                   >
                     As supply chains continue to evolve, companies like F&S Expedited LLC are playing a crucial role in keeping businesses running smoothly. Their commitment to timely delivery and customer satisfaction positions them as a strong contender in the expedited freight industry.
                   </p>
 
                   <p 
-                    className="text-sm md:text-base leading-relaxed text-stone-800 mb-4 text-justify"
+                    className="text-base md:text-lg leading-relaxed text-stone-800 mb-4 text-justify italic"
                     style={{ fontFamily: "'Times New Roman', Times, serif" }}
                   >
                     For businesses seeking a dependable logistics partner, F&S Expedited LLC represents a smart, forward-moving choice.

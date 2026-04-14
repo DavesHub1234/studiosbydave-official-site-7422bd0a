@@ -128,7 +128,7 @@ const BlogArticle1 = () => {
                 <div className="md:col-span-8 border-r-0 md:border-r border-stone-300 md:pr-6">
                   {/* Drop Cap Lead */}
                   <p 
-                    className="text-sm md:text-base leading-relaxed text-stone-800 mb-4 text-justify"
+                    className="text-base md:text-lg leading-relaxed text-stone-800 mb-4 text-justify italic"
                     style={{ fontFamily: "'Times New Roman', Times, serif" }}
                   >
                     <span className="float-left text-6xl md:text-7xl font-bold leading-none mr-2 mt-1 text-stone-900" style={{ fontFamily: "Georgia, serif" }}>B</span>
@@ -136,14 +136,14 @@ const BlogArticle1 = () => {
                   </p>
 
                   <p 
-                    className="text-sm md:text-base leading-relaxed text-stone-800 mb-4 text-justify"
+                    className="text-base md:text-lg leading-relaxed text-stone-800 mb-4 text-justify italic"
                     style={{ fontFamily: "'Times New Roman', Times, serif" }}
                   >
                     At Studios by Dave, we don't just build websites. We help local businesses stand out, compete, and grow in an increasingly crowded online marketplace.
                   </p>
 
                   {/* Two Column Section */}
-                  <div className="md:columns-2 md:gap-6 text-sm leading-relaxed text-stone-800" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+                  <div className="md:columns-2 md:gap-6 text-base md:text-lg leading-relaxed text-stone-800 italic" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
                     {/* Section 1 */}
                     <div className="break-inside-avoid mb-4">
                       <h3 className="font-black text-base md:text-lg text-stone-900 border-b border-stone-400 pb-1 mb-2 uppercase tracking-wide">

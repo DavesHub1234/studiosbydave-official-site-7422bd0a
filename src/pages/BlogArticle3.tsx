@@ -111,7 +111,7 @@ const BlogArticle3 = () => {
                 <div className="md:col-span-8 border-r-0 md:border-r border-stone-300 md:pr-6">
                   {/* Drop Cap Lead */}
                   <p 
-                    className="text-sm md:text-base leading-relaxed text-stone-800 mb-4 text-justify"
+                    className="text-base md:text-lg leading-relaxed text-stone-800 mb-4 text-justify italic"
                     style={{ fontFamily: "'Times New Roman', Times, serif" }}
                   >
                     <span className="float-left text-6xl md:text-7xl font-bold leading-none mr-2 mt-1 text-stone-900" style={{ fontFamily: "Georgia, serif" }}>Y</span>
@@ -119,14 +119,14 @@ const BlogArticle3 = () => {
                   </p>
 
                   <p 
-                    className="text-sm md:text-base leading-relaxed text-stone-800 mb-4 text-justify"
+                    className="text-base md:text-lg leading-relaxed text-stone-800 mb-4 text-justify italic"
                     style={{ fontFamily: "'Times New Roman', Times, serif" }}
                   >
                     After working with dozens of local businesses in Shelby and Cleveland County, we've identified the five most common website problems that drive customers away—and the good news is, every single one of them can be fixed.
                   </p>
 
                   {/* Two Column Section */}
-                  <div className="md:columns-2 md:gap-6 text-sm leading-relaxed text-stone-800" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+                  <div className="md:columns-2 md:gap-6 text-base md:text-lg leading-relaxed text-stone-800 italic" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
                     {/* Mistake 1 */}
                     <div className="break-inside-avoid mb-4">
                       <h3 className="font-black text-base md:text-lg text-stone-900 border-b border-stone-400 pb-1 mb-2 uppercase tracking-wide">

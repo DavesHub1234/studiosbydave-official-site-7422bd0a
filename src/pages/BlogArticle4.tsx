@@ -111,7 +111,7 @@ const BlogArticle4 = () => {
                 <div className="md:col-span-8 border-r-0 md:border-r border-stone-300 md:pr-6">
                   {/* Drop Cap Lead */}
                   <p 
-                    className="text-sm md:text-base leading-relaxed text-stone-800 mb-4 text-justify"
+                    className="text-base md:text-lg leading-relaxed text-stone-800 mb-4 text-justify italic"
                     style={{ fontFamily: "'Times New Roman', Times, serif" }}
                   >
                     <span className="float-left text-6xl md:text-7xl font-bold leading-none mr-2 mt-1 text-stone-900" style={{ fontFamily: "Georgia, serif" }}>I</span>
@@ -119,7 +119,7 @@ const BlogArticle4 = () => {
                   </p>
 
                   <p 
-                    className="text-sm md:text-base leading-relaxed text-stone-800 mb-4 text-justify"
+                    className="text-base md:text-lg leading-relaxed text-stone-800 mb-4 text-justify italic"
                     style={{ fontFamily: "'Times New Roman', Times, serif" }}
                   >
                     Online search isn't what it used to be. With AI Overviews (Google's generative summaries that answer questions directly on the results page), zero-click searches (where users get what they need without clicking through), voice assistants, and conversational queries dominating, local online visibility has shifted dramatically. In 2026, over half of online searches end without a single click to any site, and AI tools pull recommendations from trusted, consistent sources—especially your Google Business Profile (GBP) and website signals.
@@ -176,7 +176,7 @@ const BlogArticle4 = () => {
                   </div>
 
                   {/* Two Column Section */}
-                  <div className="md:columns-2 md:gap-6 text-sm leading-relaxed text-stone-800" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+                  <div className="md:columns-2 md:gap-6 text-base md:text-lg leading-relaxed text-stone-800 italic" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
                     <div className="break-inside-avoid mb-4">
                       <h4 className="font-black text-base text-stone-900 border-b border-stone-400 pb-1 mb-2 uppercase tracking-wide">
                         1. Claim & Optimize Your Google Business Profile
