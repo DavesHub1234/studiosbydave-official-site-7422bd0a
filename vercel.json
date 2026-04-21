@@ -4,17 +4,17 @@
       "source": "/:path(.*)",
       "has": [{ "type": "host", "value": "studiosbydave.com" }],
       "destination": "https://www.studiosbydave.com/:path",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/studiosweb/web-design",
       "destination": "/studiosweb/webdesign",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/studiosweb/ai-automations",
       "destination": "/studiosweb",
-      "permanent": true
+      "statusCode": 301
     }
   ],
   "headers": [
