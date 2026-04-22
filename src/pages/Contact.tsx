@@ -185,7 +185,7 @@ const Contact = () => {
                       <Phone size={32} className="text-accent" />
                     </div>
                     <p className="text-white/80 text-lg font-medium mb-2">Call Us — TEXT US!</p>
-                    <a href="tel:+17044738188" className="text-4xl lg:text-5xl font-bold text-amber-200 hover:text-amber-100 transition-colors">
+                    <a href="tel:+17044738188" className="text-3xl lg:text-4xl font-bold text-amber-200 hover:text-amber-100 transition-colors">
                       (704) 473-8188
                     </a>
                     <p className="text-trophy-gold font-bold text-lg mt-3">Always Open. 24/7.</p>

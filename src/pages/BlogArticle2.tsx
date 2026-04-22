@@ -256,19 +256,37 @@ const BlogArticle2 = () => {
                   </div>
 
                   {/* CTA Box */}
-                  <div className="border-4 border-double border-stone-800 p-4 bg-stone-100/90 text-center">
+                  <div className="border-4 border-double border-stone-800 p-4 mt-4 bg-stone-100/90 text-center">
                     <h4 className="font-black text-lg text-stone-900 mb-2" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
-                      READY TO BUILD YOUR FOUNDATION?
+                      NEED A WEBSITE THAT WORKS?
                     </h4>
                     <p className="text-xs text-stone-700 mb-3" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
-                      Contact Studios by Dave for professional web design that works with your social platforms—not instead of them.
+                      Contact Studios by Dave for a website that actually brings you customers.
                     </p>
                     <Link 
                       to="/contact"
                       className="inline-block bg-stone-800 text-stone-100 px-4 py-2 text-xs font-bold tracking-wide uppercase hover:bg-stone-700 transition-colors"
                     >
-                      Get Started Today
+                      Get Your Website
                     </Link>
+                  </div>
+
+                  {/* Related Services Box */}
+                  <div className="border-2 border-stone-400 bg-stone-50/50 mt-4">
+                    <div className="border-b border-stone-400 py-1 px-3 text-center bg-stone-200/50">
+                      <span className="text-[10px] font-bold tracking-widest uppercase text-stone-600">Related Services</span>
+                    </div>
+                    <div className="p-3 space-y-2">
+                      <Link to="/studiosweb/webdesign" className="block text-xs text-stone-700 hover:text-stone-900 underline" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+                        Professional Web Design Services
+                      </Link>
+                      <Link to="/studiosweb/seo" className="block text-xs text-stone-700 hover:text-stone-900 underline" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+                        SEO Optimization Services
+                      </Link>
+                      <Link to="/studiosweb/google-optimization" className="block text-xs text-stone-700 hover:text-stone-900 underline" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+                        Google Business Optimization
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>

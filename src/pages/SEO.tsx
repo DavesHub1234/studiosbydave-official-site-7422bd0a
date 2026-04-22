@@ -218,6 +218,93 @@ const SEOPage = () => {
         </div>
       </section>
 
+      {/* Related Services & Resources Section */}
+      <section className="py-16 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-foreground mb-4">Maximize Your Online Impact</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              SEO works best with a complete digital strategy. Explore our complementary services
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* Web Design Service */}
+            <div className="bg-card p-6 rounded-xl border border-border/50 hover:border-primary/50 transition-colors">
+              <h3 className="text-xl font-bold mb-3 text-primary">Web Design</h3>
+              <p className="text-muted-foreground mb-4">
+                SEO-optimized websites built from the ground up to rank well and convert visitors into customers.
+              </p>
+              <Link to="/studiosweb/webdesign" className="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-2">
+                Get SEO-Friendly Website
+                <ArrowRight size={16} />
+              </Link>
+            </div>
+
+            {/* Google Optimization */}
+            <div className="bg-card p-6 rounded-xl border border-border/50 hover:border-primary/50 transition-colors">
+              <h3 className="text-xl font-bold mb-3 text-primary">Google Optimization</h3>
+              <p className="text-muted-foreground mb-4">
+                Complete Google Business Profile optimization to dominate local search results.
+              </p>
+              <Link to="/studiosweb/google-optimization" className="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-2">
+                Optimize Google Presence
+                <ArrowRight size={16} />
+              </Link>
+            </div>
+
+            {/* Branding Service */}
+            <div className="bg-card p-6 rounded-xl border border-border/50 hover:border-primary/50 transition-colors">
+              <h3 className="text-xl font-bold mb-3 text-primary">Professional Branding</h3>
+              <p className="text-muted-foreground mb-4">
+                Strong branding that complements your SEO efforts and builds trust with customers.
+              </p>
+              <Link to="/studiosweb/branding" className="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-2">
+                Build Your Brand
+                <ArrowRight size={16} />
+              </Link>
+            </div>
+          </div>
+
+          {/* Related Blog Articles */}
+          <div className="bg-gradient-subtle p-8 rounded-xl border border-border/30">
+            <h3 className="text-2xl font-bold mb-6 text-center">SEO Learning Resources</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-semibold mb-3">SEO Fundamentals</h4>
+                <ul className="space-y-2">
+                  <li>
+                    <Link to="/blog/local-seo-essentials-2026" className="text-primary hover:text-primary/80 underline">
+                      Local SEO Essentials for Shelby Businesses in 2026
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/blog/website-mistakes-costing-customers" className="text-primary hover:text-primary/80 underline">
+                      5 Common Website Mistakes Costing Local Businesses Customers
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-3">Business Strategy</h4>
+                <ul className="space-y-2">
+                  <li>
+                    <Link to="/blog/does-your-business-need-a-website-2026" className="text-primary hover:text-primary/80 underline">
+                      Does Your Business Really Need a Website in 2026?
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/blog/why-choose-studios-by-dave" className="text-primary hover:text-primary/80 underline">
+                      Why Choose Studios by Dave Over Local Competition?
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <InternalLinksFooter />
       <Footer />
     </div>
