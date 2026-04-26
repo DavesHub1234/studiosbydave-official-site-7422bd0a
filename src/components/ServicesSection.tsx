@@ -154,19 +154,22 @@ const ServicesSection = () => {
               </div>)}
           </div>
 
-          {/* YouTube Video Embed */}
+          {/* Backyard Fire Video */}
           <div className="mt-12 flex justify-center">
-            <div className="w-full max-w-2xl aspect-video rounded-lg overflow-hidden shadow-lg">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/0ipv_l7KoSI?loop=1&playlist=0ipv_l7KoSI"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full"
-              />
+            <div className="relative w-full max-w-lg overflow-hidden rounded-[2rem] bg-slate-950/95 p-5 shadow-2xl ring-1 ring-white/10">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(148,163,184,0.12),_transparent_30%),linear-gradient(180deg,_rgba(15,23,42,0.9),_rgba(15,23,42,0.98))] pointer-events-none" />
+              <div className="relative overflow-hidden rounded-[1.75rem] bg-slate-900">
+                <div className="relative aspect-[16/9]">
+                  <video
+                    src="/lovable-uploads/backyard-fire.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -92,36 +92,54 @@ const About = () => {
               {
                 icon: Users,
                 title: "Local Focus",
-                description: "We understand local businesses and their unique challenges"
+                description: "We understand local businesses and their unique challenges",
+                backdrop: webDesignBackdrop
               },
               {
                 icon: Award,
                 title: "Proven Results",
-                description: "Track record of helping businesses grow their online presence"
+                description: "Track record of helping businesses grow their online presence",
+                backdrop: brandingBackdrop
               },
               {
                 icon: Target,
                 title: "Targeted Solutions",
-                description: "Customized strategies for contractors and service businesses"
+                description: "Customized strategies for contractors and service businesses",
+                backdrop: googleBackdrop
               },
               {
                 icon: Lightbulb,
                 title: "Innovation",
-                description: "Cutting-edge AI and technology to give you the competitive edge"
+                description: "Cutting-edge AI and technology to give you the competitive edge",
+                backdrop: aiBackdrop
               }
-            ].map((value, index) => (
-              <Card key={index} className="text-center border-0 shadow-card">
-                <CardHeader>
-                  <div className="w-16 h-16 bg-gradient-primary-gold rounded-full flex items-center justify-center mx-auto mb-4">
-                    <value.icon size={32} className="text-white" />
-                  </div>
-                  <CardTitle className="text-xl font-bold">{value.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base">{value.description}</CardDescription>
-                </CardContent>
-              </Card>
-            ))}
+            ].map((value, index) => {
+              const IconComponent = value.icon;
+              return (
+                <Card key={index} className="group hover:shadow-card transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm overflow-hidden relative">
+                  <div 
+                    className="absolute inset-0 opacity-[0.06] pointer-events-none"
+                    style={{
+                      backgroundImage: `url(${value.backdrop})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                      filter: 'grayscale(85%) brightness(1.2) contrast(1.1)',
+                      mixBlendMode: 'multiply'
+                    }}
+                  />
+                  <CardHeader className="text-center relative z-10">
+                    <div className="w-16 h-16 bg-gradient-primary-gold rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out skew-x-12" />
+                      <IconComponent size={32} className="text-white drop-shadow-md relative z-10" />
+                    </div>
+                    <CardTitle className="text-xl font-bold group-hover:text-primary transition-colors">{value.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent className="relative z-10">
+                    <CardDescription className="text-base">{value.description}</CardDescription>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
