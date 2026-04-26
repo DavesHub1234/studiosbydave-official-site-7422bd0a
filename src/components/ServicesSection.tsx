@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Globe, Palette, Bot, Search, Target, Users, Package } from "lucide-react";
+import { ArrowRight, Globe, Palette, Bot, Search, Target, Users, Package, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import webDesignBackdrop from "@/assets/web-design-backdrop.png";
 import brandingBackdrop from "@/assets/branding-backdrop.jpeg";
@@ -74,6 +74,12 @@ const ServicesSection = () => {
           {services.map((service, index) => {
           const IconComponent = service.icon;
           return <Card key={index} className="group hover:shadow-card transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm overflow-hidden relative">
+                {/* Check Badge */}
+                <div className="absolute top-4 right-4 z-20 group-hover:block hidden">
+                  <div className="check-badge-animate">
+                    <CheckCircle size={32} className="text-green-500 drop-shadow-lg" />
+                  </div>
+                </div>
                 <div 
                   className="absolute inset-0 opacity-[0.06] pointer-events-none"
                   style={{

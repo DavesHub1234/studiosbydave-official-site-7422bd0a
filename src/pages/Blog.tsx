@@ -12,7 +12,7 @@ const blogArticles = [
     title: "Why Choose Studios by Dave Over the Local Competition?",
     subtitle: "A Local Partner for Professional Web Design, Branding, and SEO in Shelby, NC",
     date: "January 2025",
-    volume: "Vol. 1, No. 1",
+    volume: "Vol #1 Article #1",
     excerpt: "In today's digital-first world, your website and online presence are often the first impression customers have of your business. For local businesses in Shelby, North Carolina and the surrounding areas, choosing the right digital partner can make the difference between being found — or being overlooked.",
   },
   {
@@ -21,7 +21,7 @@ const blogArticles = [
     title: "Does Your Business Really Need a Website in 2026?",
     subtitle: "And What Happens If You Don't",
     date: "January 2026",
-    volume: "Vol. 1, No. 2",
+    volume: "Vol #1 Article #2",
     excerpt: "For many years, 'You need a website' was treated as unquestionable business advice. But it's 2026 now. Social media platforms have become storefronts. AI assistants answer questions instantly. So does your business really need a website anymore?",
   },
   {
@@ -30,7 +30,7 @@ const blogArticles = [
     title: "5 Common Website Mistakes Costing Local Businesses Customers",
     subtitle: "And How to Fix Them Before It's Too Late",
     date: "January 2026",
-    volume: "Vol. 1, No. 3",
+    volume: "Vol #1 Article #3",
     excerpt: "Your website is often the first impression a potential customer has of your business. But what happens when that first impression is a bad one? Every day, local businesses lose customers—not because of poor service—but because of easily fixable website mistakes.",
   },
   {
@@ -39,7 +39,7 @@ const blogArticles = [
     title: "Local SEO Essentials for Shelby Businesses in 2026: Don't Get Left Behind in AI Search",
     subtitle: "Why Local SEO Is More Important Than Ever – And How to Get It Right",
     date: "February 2026",
-    volume: "Vol. 1, No. 4",
+    volume: "Vol #1 Article #4",
     excerpt: "Even a beautifully designed, mistake-free website can get buried in search results if local SEO isn't dialed in. With AI Overviews, zero-click searches, and voice assistants dominating, local online visibility has shifted dramatically.",
   },
   {
@@ -48,7 +48,7 @@ const blogArticles = [
     title: "Driving Efficiency Forward: Spotlight on F&S Expedited LLC",
     subtitle: "Reliable, Fast, and Customer-Focused Logistics from Shelby, NC",
     date: "March 2026",
-    volume: "Vol. 1, No. 5",
+    volume: "Vol #1 Article #5",
     excerpt: "In today's fast-paced logistics landscape, businesses need more than just transportation—they need reliability, speed, and a partner they can trust. Meet F&S Expedited LLC, a Shelby-based interstate freight carrier committed to delivering efficient, dependable solutions.",
   },
 ];
@@ -98,10 +98,10 @@ const Blog = () => {
                 to={`/blog/${article.slug}`}
                 className="block group"
               >
-                <article className="bg-white border-2 border-neutral-900 p-6 md:p-8 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,0.9)] transition-all duration-300">
+                <article className="bg-white border-2 border-neutral-900 p-6 md:p-8 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,0.9)] transition-all duration-300 rounded-xl">
                   {/* Article Header */}
                   <div className="flex items-center justify-between text-xs text-neutral-500 font-serif mb-4 border-b border-neutral-200 pb-4">
-                    <span>{article.volume}</span>
+                    <span className="electric-green-red-text">{article.volume}</span>
                     <span>{article.date}</span>
                   </div>
                   

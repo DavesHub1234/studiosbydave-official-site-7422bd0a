@@ -10,6 +10,10 @@ import { Link } from "react-router-dom";
 import SimpleSEO from "@/components/SimpleSEO";
 import { breadcrumbSchema } from "@/data/structuredData";
 import brandKitShowcase from "@/assets/brand-kit-showcase.png";
+import webDesignBackdrop from "@/assets/web-design-backdrop.png";
+import brandingBackdrop from "@/assets/branding-backdrop.jpeg";
+import googleBackdrop from "@/assets/google-backdrop.jpeg";
+import mediaPacksBackdrop from "@/assets/media-packs-backdrop.jpg";
 
 const Branding = () => {
   const breadcrumbs = breadcrumbSchema([
@@ -71,39 +75,50 @@ const Branding = () => {
       {/* Services Overview Section */}
       <section className="py-24 bg-gradient-subtle">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center text-foreground mb-16">
-            Complete Branding Solutions
-          </h2>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
+              Logo Design & Branding
+            </h2>
+            <p className="text-2xl text-muted-foreground font-semibold">
+              Complete Branding Solutions
+            </p>
+          </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
                 icon: Palette,
                 title: "Logo Design",
-                description: "Custom logos crafted to capture your business essence and create lasting first impressions with professional, memorable designs."
+                description: "Custom logos crafted to capture your business essence and create lasting first impressions with professional, memorable designs.",
+                backdrop: webDesignBackdrop
               },
               {
                 icon: Users,
                 title: "Brand Identity",
-                description: "Comprehensive visual identity systems including color palettes, typography, and brand guidelines for consistent messaging."
+                description: "Comprehensive visual identity systems including color palettes, typography, and brand guidelines for consistent messaging.",
+                backdrop: brandingBackdrop
               },
               {
                 icon: Target,
                 title: "Marketing Materials",
-                description: "Complete suite of print and digital materials from business cards to vehicle wraps that amplify your brand presence."
+                description: "Complete suite of print and digital materials from business cards to vehicle wraps that amplify your brand presence.",
+                backdrop: googleBackdrop
               },
               {
                 icon: Award,
                 title: "Brand Strategy",
-                description: "Strategic positioning and messaging that differentiates your business and resonates with your target market."
+                description: "Strategic positioning and messaging that differentiates your business and resonates with your target market.",
+                backdrop: mediaPacksBackdrop
               }
             ].map((service, index) => (
-              <Card key={index} className="text-center border-0 shadow-card relative overflow-hidden">
+              <Card key={index} className="text-center border-0 shadow-card relative overflow-hidden bg-white/80 backdrop-blur-sm">
                 <div 
-                  className="absolute inset-0 opacity-[0.12] pointer-events-none"
+                  className="absolute inset-0 opacity-[0.06] pointer-events-none"
                   style={{
-                    backgroundImage: `linear-gradient(135deg, hsl(40, 30%, 85%), hsl(35, 25%, 80%))`,
-                    filter: 'grayscale(20%) brightness(1.1) contrast(0.9)',
+                    backgroundImage: `url(${service.backdrop})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    filter: 'grayscale(85%) brightness(1.2) contrast(1.1)',
                     mixBlendMode: 'multiply'
                   }}
                 />

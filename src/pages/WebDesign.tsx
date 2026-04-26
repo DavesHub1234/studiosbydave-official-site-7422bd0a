@@ -271,10 +271,10 @@ const WebDesign = () => {
           </p>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Standard Package */}
+            {/* Launch Package */}
             <Card className="border-2 border-border hover:border-primary/50 transition-colors">
               <CardHeader className="text-center pb-4">
-                <CardTitle className="text-2xl font-bold">Standard Package</CardTitle>
+                <CardTitle className="text-2xl trophy-gold-text">Launch Package</CardTitle>
                 <CardDescription className="text-lg font-medium text-primary">1-5 Page Website</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -286,7 +286,7 @@ const WebDesign = () => {
                     "Contact form integration",
                     "Social media links",
                     "1 round of revisions",
-                    "4-6 week delivery"
+                    "Estimated delivery: 4-6 weeks"
                   ].map((feature, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
@@ -310,7 +310,7 @@ const WebDesign = () => {
                 </span>
               </div>
               <CardHeader className="text-center pb-4 pt-8">
-                <CardTitle className="text-2xl font-bold">Professional Package</CardTitle>
+                <CardTitle className="text-2xl trophy-gold-text">Scale Package</CardTitle>
                 <CardDescription className="text-lg font-medium text-primary">6-10 Page Website</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -324,7 +324,7 @@ const WebDesign = () => {
                     "Lead capture forms",
                     "Photo gallery",
                     "3 rounds of revisions",
-                    "4-6 week delivery"
+                    "Estimated delivery: 4-6 weeks"
                   ].map((feature, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
@@ -340,10 +340,10 @@ const WebDesign = () => {
               </CardContent>
             </Card>
 
-            {/* Enterprise Package */}
+            {/* Transform Package */}
             <Card className="border-2 border-border hover:border-primary/50 transition-colors">
               <CardHeader className="text-center pb-4">
-                <CardTitle className="text-2xl font-bold">Enterprise Package</CardTitle>
+                <CardTitle className="text-2xl trophy-gold-text">Transform Package</CardTitle>
                 <CardDescription className="text-lg font-medium text-primary">15+ Page Website</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -357,7 +357,7 @@ const WebDesign = () => {
                     "Custom functionality",
                     "Priority support",
                     "Unlimited revisions",
-                    "4-6 week delivery"
+                    "Estimated delivery: 5-8 weeks"
                   ].map((feature, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
@@ -380,7 +380,7 @@ const WebDesign = () => {
       <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-4">Current Web Flyers</h2>
+            <h2 className="crazy-gradient-text mb-4">Current Web Flyers</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Explore our current marketing flyers showcasing our web design and e-commerce solutions for different business needs
             </p>
