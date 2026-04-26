@@ -342,11 +342,12 @@ const WebDesign = () => {
             <div className="bg-card rounded-xl border border-border/50 p-6">
               <h3 className="text-xl font-bold mb-4 text-primary">Local Business Web Design</h3>
               <p className="text-muted-foreground mb-4">Professional web design services for local contractors and small businesses</p>
-              <div className="bg-gray-100 rounded-lg p-4">
+              <div className="bg-gray-100 rounded-lg p-4 overflow-hidden">
                 <img 
                   src="/flyers/Web Flyer.jpg" 
                   alt="Local Business Web Design Flyer - Professional web design services for contractors and small businesses"
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-contain max-w-none"
+                  style={{ imageRendering: 'crisp-edges' }}
                   loading="lazy"
                   decoding="async"
                 />
@@ -357,11 +358,12 @@ const WebDesign = () => {
             <div className="bg-card rounded-xl border border-border/50 p-6">
               <h3 className="text-xl font-bold mb-4 text-primary">Premium E-commerce Solutions</h3>
               <p className="text-muted-foreground mb-4">Complete online store solutions with custom domains and Shopify integration</p>
-              <div className="bg-gray-100 rounded-lg p-4">
+              <div className="bg-gray-100 rounded-lg p-4 overflow-hidden">
                 <img 
                   src="/flyers/New Flyer_1.jpg" 
                   alt="Premium E-commerce Solutions Flyer - Shopify stores and custom domains for online businesses"
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-contain max-w-none"
+                  style={{ imageRendering: 'crisp-edges' }}
                   loading="lazy"
                   decoding="async"
                 />
@@ -372,11 +374,12 @@ const WebDesign = () => {
             <div className="bg-card rounded-xl border border-border/50 p-6">
               <h3 className="text-xl font-bold mb-4 text-primary">Advanced Online Stores</h3>
               <p className="text-muted-foreground mb-4">Professional e-commerce platforms with advanced features for growing businesses</p>
-              <div className="bg-gray-100 rounded-lg p-4">
+              <div className="bg-gray-100 rounded-lg p-4 overflow-hidden">
                 <img 
                   src="/flyers/New Flyer_2.jpg" 
                   alt="Advanced Online Stores Flyer - Professional e-commerce solutions for businesses"
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-contain max-w-none"
+                  style={{ imageRendering: 'crisp-edges' }}
                   loading="lazy"
                   decoding="async"
                 />
