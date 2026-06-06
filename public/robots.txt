@@ -2,10 +2,10 @@ User-agent: *
 Allow: /
 Crawl-delay: 1
 
-# Disallow specific paths if any exist
-# Disallow: /admin/
-# Disallow: /private/
-# Disallow: /*.json$
+# Disallow internal/API paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /*.json$
 
 # Allow specific bots
 User-agent: Googlebot
@@ -25,5 +25,24 @@ Allow: /
 
 User-agent: DuckDuckBot
 Allow: /
+
+# Block AI training crawlers
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
 
 Sitemap: https://www.studiosbydave.com/sitemap.xml

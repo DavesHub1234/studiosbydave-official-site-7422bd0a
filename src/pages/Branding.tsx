@@ -17,7 +17,7 @@ import mediaPacksBackdrop from "@/assets/media-packs-backdrop.jpg";
 const Branding = () => {
   const breadcrumbs = breadcrumbSchema([
     { name: "Home", url: "https://www.studiosbydave.com" },
-    { name: "Logo Design & Branding", url: "https://www.studiosbydave.com/branding" }
+    { name: "Logo Design & Branding", url: "https://www.studiosbydave.com/services/branding" }
   ]);
 
   const brandingSchema = {

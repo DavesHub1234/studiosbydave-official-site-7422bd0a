@@ -5,8 +5,23 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, CheckCircle, Globe, Shield, Clock, Zap } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { breadcrumbSchema, articleSchema } from "@/data/structuredData";
 
 const BlogArticle2 = () => {
+  const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "https://www.studiosbydave.com" },
+    { name: "Blog", url: "https://www.studiosbydave.com/blog" },
+    { name: "Does Your Business Need a Website in 2026?", url: "https://www.studiosbydave.com/blog/does-your-business-need-a-website-2026" }
+  ]);
+
+  const articleStructuredData = articleSchema(
+    "Does Your Business Really Need a Website in 2026?",
+    "Discover why most businesses still need a website in 2026, what role it plays in trust-building and discovery, and what happens if you skip it.",
+    "https://www.studiosbydave.com/blog/does-your-business-need-a-website-2026",
+    "2026-01-29",
+    "2026-01-29"
+  );
+
   return (
     <div className="min-h-screen bg-[#f5f5f0]">
       <SimpleSEO
@@ -16,6 +31,7 @@ const BlogArticle2 = () => {
         canonical="https://www.studiosbydave.com/blog/does-your-business-need-a-website-2026"
         datePublished="2026-01-29"
         dateModified="2026-01-29"
+        structuredData={[breadcrumbs, articleStructuredData]}
       />
       
       <Navigation />
