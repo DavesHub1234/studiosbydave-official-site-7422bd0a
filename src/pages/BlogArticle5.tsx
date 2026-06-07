@@ -5,8 +5,23 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, CheckCircle, Truck, Package, Clock, Users, MapPin, Globe, User } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { breadcrumbSchema, articleSchema } from "@/data/structuredData";
 
 const BlogArticle5 = () => {
+  const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "https://www.studiosbydave.com" },
+    { name: "Blog", url: "https://www.studiosbydave.com/blog" },
+    { name: "F&S Expedited LLC Spotlight", url: "https://www.studiosbydave.com/blog/fs-expedited-llc-spotlight" }
+  ]);
+
+  const articleStructuredData = articleSchema(
+    "Driving Efficiency Forward: Spotlight on F&S Expedited LLC",
+    "Meet F&S Expedited LLC — a Shelby NC-based interstate freight carrier delivering reliable, expedited logistics solutions for businesses across the United States.",
+    "https://www.studiosbydave.com/blog/fs-expedited-llc-spotlight",
+    "2026-03-01",
+    "2026-03-01"
+  );
+
   return (
     <div className="min-h-screen bg-[#f5f5f0]">
       <SimpleSEO
@@ -16,6 +31,7 @@ const BlogArticle5 = () => {
         canonical="https://www.studiosbydave.com/blog/fs-expedited-llc-spotlight"
         datePublished="2026-03-01"
         dateModified="2026-03-01"
+        structuredData={[breadcrumbs, articleStructuredData]}
       />
       
       <Navigation />

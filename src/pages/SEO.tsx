@@ -10,7 +10,7 @@ import { breadcrumbSchema } from "@/data/structuredData";
 const SEOPage = () => {
   const breadcrumbs = breadcrumbSchema([
     { name: "Home", url: "https://www.studiosbydave.com" },
-    { name: "SEO Services", url: "https://www.studiosbydave.com/seo" }
+    { name: "SEO Services", url: "https://www.studiosbydave.com/services/seo" }
   ]);
 
   const seoSchema = {

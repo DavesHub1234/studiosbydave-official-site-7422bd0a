@@ -5,8 +5,23 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, CheckCircle, MapPin, Star, MessageSquare, Search, Brain } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { breadcrumbSchema, articleSchema } from "@/data/structuredData";
 
 const BlogArticle4 = () => {
+  const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "https://www.studiosbydave.com" },
+    { name: "Blog", url: "https://www.studiosbydave.com/blog" },
+    { name: "Local SEO Essentials 2026", url: "https://www.studiosbydave.com/blog/local-seo-essentials-2026" }
+  ]);
+
+  const articleStructuredData = articleSchema(
+    "Local SEO Essentials for Shelby Businesses in 2026",
+    "Learn why local SEO is more important than ever in 2026 with AI search, zero-click results, and voice assistants. Essential tips for Shelby NC businesses.",
+    "https://www.studiosbydave.com/blog/local-seo-essentials-2026",
+    "2026-02-01",
+    "2026-02-01"
+  );
+
   return (
     <div className="min-h-screen bg-[#f5f5f0]">
       <SimpleSEO
@@ -16,6 +31,7 @@ const BlogArticle4 = () => {
         canonical="https://www.studiosbydave.com/blog/local-seo-essentials-2026"
         datePublished="2026-02-01"
         dateModified="2026-02-01"
+        structuredData={[breadcrumbs, articleStructuredData]}
       />
       
       <Navigation />

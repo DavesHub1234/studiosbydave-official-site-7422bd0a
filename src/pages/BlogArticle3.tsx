@@ -5,8 +5,23 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, CheckCircle, Zap, Phone, Smartphone, MapPin, Palette } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { breadcrumbSchema, articleSchema } from "@/data/structuredData";
 
 const BlogArticle3 = () => {
+  const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "https://www.studiosbydave.com" },
+    { name: "Blog", url: "https://www.studiosbydave.com/blog" },
+    { name: "Website Mistakes Costing Customers", url: "https://www.studiosbydave.com/blog/website-mistakes-costing-customers" }
+  ]);
+
+  const articleStructuredData = articleSchema(
+    "5 Common Website Mistakes Costing Local Businesses Customers",
+    "Discover the top website mistakes hurting local businesses and learn how to fix them. From slow loading speeds to poor mobile design, get expert tips from Studios by Dave.",
+    "https://www.studiosbydave.com/blog/website-mistakes-costing-customers",
+    "2026-01-29",
+    "2026-01-29"
+  );
+
   return (
     <div className="min-h-screen bg-[#f5f5f0]">
       <SimpleSEO
@@ -16,6 +31,7 @@ const BlogArticle3 = () => {
         canonical="https://www.studiosbydave.com/blog/website-mistakes-costing-customers"
         datePublished="2026-01-29"
         dateModified="2026-01-29"
+        structuredData={[breadcrumbs, articleStructuredData]}
       />
       
       <Navigation />
